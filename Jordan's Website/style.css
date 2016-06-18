@@ -97,12 +97,12 @@ table {
 
 /* HEADER MENU BAR */
 
+
 .header {
 	white-space: nowrap;
 	display: table;
 	margin: 0 auto;
 	position: relative;
-	/*border: 2px solid red;*/
 }
 
 .header img {
@@ -111,7 +111,6 @@ table {
 	height: 114px;
 	background: #555;
 	position: relative;
-	/*border: 2px solid green;*/
 	z-index: -1;
 }
 
@@ -122,8 +121,6 @@ table {
 	position: relative;
 	margin-top: 20px;
 	font-size: 75px;
-	color: #000000;
-	/*border: 2px solid blue;*/
 	z-index: -1;
 	padding-right: 30px;
 	margin-right: 60px;
@@ -134,7 +131,6 @@ ul {
     list-style-type: none;
     margin-top: 72px;
     padding: 0;
-	/*border: 2px solid yellow;*/
 	text-align: center;
 	margin-left: 105px;
 }
@@ -349,8 +345,8 @@ a{
 /* CONTACT PAGE */
 
 .contact {
-	width: 30%;
-	margin: auto;
+	width: 500px;
+	margin: 0 auto;
 	font-family: RobotoThin;
 	line-height: 175%;
 	font-size: 12px;
@@ -375,6 +371,7 @@ input[type=button], input[type=submit], input[type=reset] {
     cursor: pointer;
 	font-size: 14px;
 	width: 100px;
+	margin-bottom: 25px;
 }
 
 /* INDIVIDUAL DESIGN PAGES */
@@ -481,6 +478,27 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 */
 
+.slideshow{
+	
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	-ms-box-orient: vertical;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+
+    -webkit-flex-direction: column; 	
+}
+
 .picWrap  {
 	
     display: in-line flex;
@@ -488,13 +506,9 @@ input[type=button], input[type=submit], input[type=reset] {
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
-	width: 75%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 60px;
-	margin-bottom: 60px;
+	width: 100%;
+	margin: auto;
 	overflow: hidden;
-
 	
   -ms-box-orient: horizontal;
   display: -webkit-box;
@@ -509,13 +523,24 @@ input[type=button], input[type=submit], input[type=reset] {
 .arrowLeft,
 .arrowRight {
 	margin: 10px;
-	width: 60px;
+	width: 8%;
 	overflow: hidden;
 	
 }
 
 .arrowImgs {
 	width: 100%;
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	filter: blur(0);
+	-webkit-filter: blur(0);
+}
+	
+.arrowImgs:hover {
+	opacity: .5;
+	filter: blur(0);
+	-webkit-filter: blur(0);
 }
 	
 	
@@ -528,4 +553,28 @@ input[type=button], input[type=submit], input[type=reset] {
 
 .photo img{
 	width: 100%;
+}
+
+
+.captions{
+	text-align: center;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-family: MinionPro;
+    font-size: 18px;
+    letter-spacing: 2px;
+	line-height: 100%;
+}
+
+.capText{
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	font-family: RobotoThin;
+	font-size: 16px;
+	line-height: 175%;
+	text-shadow: 0 0 0 #000000;
 }
