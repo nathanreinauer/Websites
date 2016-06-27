@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/* MY CODE BEGINS BELOW */
+/*
+body {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+}*/
+
+/* HEADER */
+
+.header {
+	display: flex;
+	width: 100%;
+	height: 150px;
+	background-color: black;
+	opacity: 0.8;
+	position: absolute;
+}
+
+.header ul {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+}
+
+.header a {
+	color: red;
+}
+
+.index  {
+    display: -webkit-flex;
+	display: flex;
+	background-color: black;
+	justify-content: center;
+	width: 100%;
+	z-index: -9000;
+}
+
+.landing {
+    display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Heebo', sans-serif;
+	justify-content: center;
+}
+
+.welcome {
+	display: flex;
+	font-size: 50px;
+	color: white;
+}
+
+.looking {
+	display: flex;
+	flex-direction: row;
+	font-size: 20px;
+}
+
+.lookingText {
+	display: flex;
+	color: white;
+	margin-right: 5px;
+}
+
+.landingLinks a {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	transition: color .5s ease;
+}
+
+
+.link1 {
+	color: #F0A202; /*#FFEC94; #FFD034;*/
+}
+
+.link2 {
+	color: #F28500;/*#9BD1FA; #0072BB;*/
+}
+
+.link3 {
+	color: #D95D39;/*#B0E57C; #FF4C3B;;*/
+}
+
+/*
+If I want to make all links the same color
+.link1, .link2, .link3 {
+	color: #3D72A4;
+}
+*/
+
+.landingLinks a:hover {
+	color: white;	
+}
+
+
+
+/* DEVELOPER PAGE */
+
+
+.developer { 
+	display: flex;
+    display: -webkit-flex;
+  background: black url(images/moodycoderBlur.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	margin: auto;
+	padding: auto;
+	width: 100%;
+  justify-content: center;
+}
+	
+.headline {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin: auto;
+	-ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+	
+}
+	
+.headline p{
+	margin-top: 200px;
+	background-color: transparent;
+	color: white;
+	font-family: 'Heebo', sans-serif;
+	font-size: 50px;
+	width: 100%;
+}
+
+
+
+/* WRITER PAGE */
+
+.writer { 
+  background: black url(images/wood.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
+
+
+/* MUSICIAN PAGE */
+
+.musician { 
+  background: black url(images/headphones.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

@@ -99,62 +99,82 @@ table {
 
 
 .header {
-	white-space: nowrap;
-	display: table;
-	margin: 0 auto;
-	position: relative;
+	/*border: 1px solid yellow;*/
+	display: flex;
+	flex-direction: column;
+	width: 530px;
+	flex-wrap: nowrap;
+	/*align-items: flex-end;*/
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+
+.topLine{
+	/*border: 1px solid purple;*/
+	display: flex;
+	flex-direction: row;
+	
 }
 
 .header img {
-	float: left;
-	width: 114px;
-	height: 114px;
-	background: #555;
-	position: relative;
-	z-index: -1;
+	/*border: 1px solid red;*/
+	display: flex;
+	width: 95px;
+	margin-right: 15px;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .header h1 {
+	/*border: 1px solid green;*/
+	display: flex;
 	white-space: nowrap;
 	font-family: BasicTitleFont;
-	float: right;
-	position: relative;
-	margin-top: 20px;
+	margin: auto;
 	font-size: 75px;
 	z-index: -1;
-	padding-right: 30px;
-	margin-right: 60px;
+
+	
 }
 
 ul {
 	position: absolute;
+	/*border: 1px solid blue;*/
+	display: flex;
     list-style-type: none;
-    margin-top: 72px;
-    padding: 0;
 	text-align: center;
-	margin-left: 105px;
+
+	align-self: flex-end;
+	top: 100px;
 }
 
 li {
-    float: left;
+	margin: auto;
+	display: flex;
 }
 
 li a {
-	/*border: 2px solid pink;*/
-	font-size: 15.8px;
+	margin: 0px;
+	display: flex;
+	/*border: 1px solid pink;*/
+	font-size: 16px;
 	letter-spacing: 4px;
 	font-family: RobotoThin;
 	top:100px;
-    display: block;
     color: #929090;
-    padding: 14px 15.5px;
+    padding: 15.5px 15.5px;
     text-decoration: none;
+	text-shadow: 0 0 0 #929090;
 	/* padding for 'contact' link changed in HTML */
 }
 
 li a:hover {
-	color: #4A4948;
-    text-decoration: underline;
+	color: #4a4848;
+	text-decoration: underline;
+	  text-shadow: 0 0 0 #000000;
 }
 
 /* FRONT PAGE IMAGE */
@@ -376,13 +396,11 @@ input[type=button], input[type=submit], input[type=reset] {
 
 /* INDIVIDUAL DESIGN PAGES */
 
-.cap {
-	width: 100%;
-	line-height: 150%;
-	text-shadow : 0 0 0 #000000;
+.entire{
+	margin-bottom: 200px;
+	
 }
 
-/* 
 .slideshow-container {
   max-width: 800px;
   position: relative;
@@ -422,12 +440,19 @@ input[type=button], input[type=submit], input[type=reset] {
   color: #000000;
   padding: 8px 12px;
   position: absolute;
-  bottom: -220px;
+  bottom: -160px;
   width: 100%;
   text-align: center;
    font-family: MinionPro;
-   font-size: 14px;
+   font-size: 16px;
    letter-spacing: 2px;
+}
+
+.cap {
+	width: 100%;
+	line-height: 150%;
+	text-shadow : 0 0 0 #000000;
+	font-family: RobotoThin;
 }
 
 
@@ -476,8 +501,8 @@ input[type=button], input[type=submit], input[type=reset] {
 @media only screen and (max-width: 300px) {
   .slprev, .slnext,.text {font-size: 11px}
 }
-*/
 
+/*
 .slideshow{
 	
 	width: 75%;
@@ -578,3 +603,4 @@ input[type=button], input[type=submit], input[type=reset] {
 	line-height: 175%;
 	text-shadow: 0 0 0 #000000;
 }
+*/

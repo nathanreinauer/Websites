@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF RESET */
+
+@font-face {
+    font-family: BasicTitleFont;
+    src: url('fonts/basictitlefont.ttf');
+    font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: RobotoThin;
+    src: url('fonts/Roboto-Thin.ttf');
+    font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+.header {
+	/*border: 1px solid yellow;*/
+	display: flex;
+	flex-direction: column;
+	width: 530px;
+	flex-wrap: nowrap;
+	/*align-items: flex-end;*/
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+
+.topLine{
+	/*border: 1px solid purple;*/
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.header img {
+	/*border: 1px solid red;*/
+	display: flex;
+	width: 95px;
+	margin-right: 15px;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.header h1 {
+	/*border: 1px solid green;*/
+	display: flex;
+	white-space: nowrap;
+	font-family: BasicTitleFont;
+	margin: auto;
+	font-size: 75px;
+	z-index: -1;
+
+	
+}
+
+ul {
+	position: absolute;
+	/*border: 1px solid blue;*/
+	display: flex;
+    list-style-type: none;
+	text-align: center;
+
+	align-self: flex-end;
+	top: 100px;
+}
+
+li {
+	margin: auto;
+	display: flex;
+}
+
+li a {
+	margin: 0px;
+	display: flex;
+	/*border: 1px solid pink;*/
+	font-size: 16px;
+	letter-spacing: 4px;
+	font-family: RobotoThin;
+	top:100px;
+    color: #929090;
+    padding: 15.5px 15.5px;
+    text-decoration: none;
+	text-shadow: 0 0 0 #929090;
+	/* padding for 'contact' link changed in HTML */
+}
+
+li a:hover {
+	color: #4a4848;
+	text-decoration: underline;
+	  text-shadow: 0 0 0 #000000;
+}
