@@ -187,9 +187,9 @@ table {
 	color: #F28500;
 	text-decoration: none;
 	opacity: 0;
-	transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	-webkit-transition: opacity 1s ease-in-out;
+	transition: opacity .55s ease-in-out;
+	-moz-transition: opacity .55s ease-in-out;
+	-webkit-transition: opacity .55s ease-in-out;
 }
 .homeH {
 	/* 'HOME' LINK */
@@ -215,9 +215,9 @@ table {
 .home:hover .homeM {
 	/* ...AND SO DOES 'MUSIC' */
 	opacity: 1.0;
-	transition: opacity .55s ease-in-out;
-	-moz-transition: opacity .55s ease-in-out;
-	-webkit-transition: opacity .55s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-webkit-transition: opacity 1s ease-in-out;
 }
 
 /* MENU CONTAINER --------------------------- */
@@ -237,7 +237,7 @@ table {
 	font-family: 'heebo';
 	font-size: 30px;
 	text-align: center;
-	width: 140px;
+	width: 150px;
 }
 
 .skills a {
@@ -251,12 +251,12 @@ table {
 .links {
 	display: flex;
 	flex-direction: column;
-	margin-left: 5%;
+	margin-left: 6%;
 	color: white;
 	font-family: 'heebo';
 	font-size: 30px;
 	text-align: center;
-	width: 140px;
+	width: 150px;
 }
 
 .links ul {
@@ -268,17 +268,32 @@ table {
 	color: #F28500;
 	text-decoration: none;
 	opacity: 0;
-	transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	-webkit-transition: opacity 1s ease-in-out;
+	transition: opacity .55s ease-in-out;
+	-moz-transition: opacity .55s ease-in-out;
+	-webkit-transition: opacity .55s ease-in-out;
 }
-.linksL:before{
-	color: white;
-	text-decoration: none;
-	content: 'Links';
-	transition: content 1s;
-	-moz-transition: content 1s;
-	-webkit-transition: content 1s;
+
+.contentClass{
+	position: relative;
+
+}
+.linksL:before {
+  position:absolute;
+  color: white;
+  text-decoration: none;
+  content: 'Links';
+  transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+}
+.linksL:after {
+  color: white;
+  opacity:0;
+  text-decoration: none;
+  content: 'Linkedin';
+  transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -webkit-transition: opacity 1s;
 }
 .linksS {
 	color: #D95D39;
@@ -296,16 +311,24 @@ table {
 }
 .links:hover .linksS {
 	opacity: 1.0;
-	transition: opacity .55s ease-in-out;
-	-moz-transition: opacity .55s ease-in-out;
-	-webkit-transition: opacity .55s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-webkit-transition: opacity 1s ease-in-out;
 }
+
 .links:hover .linksL:before {
-	content: 'LinkedIn';
-	text-decoration: none;
-	transition: content .55s;
-	-moz-transition: content .55s;
-	-webkit-transition: content .55s;
+  opacity:0;
+  text-decoration: none;
+  transition: opacity .55s;
+  -moz-transition: opacity .55s;
+  -webkit-transition: opacity .55s;
+}
+.links:hover .linksL:after {
+  opacity:1;
+  text-decoration: none;
+  transition: opacity .55s;
+  -moz-transition: opacity .55s;
+  -webkit-transition: opacity .55s;
 }
 
 
@@ -313,15 +336,13 @@ table {
 
 
 .contact {
-	/* LIST CONTAINER */
 	display: flex;
 	flex-direction: column;
-	margin-left: 5%;
 	color: white;
 	font-family: 'heebo';
 	font-size: 30px;
 	text-align: center;
-	width: 140px;
+	width: 150px;
 }
 
 .contact ul {
@@ -333,9 +354,9 @@ table {
 	color: #F28500;
 	text-decoration: none;
 	opacity: 0;
-	transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	-webkit-transition: opacity 1s ease-in-out;
+	transition: opacity .55s ease-in-out;
+	-moz-transition: opacity .55s ease-in-out;
+	-webkit-transition: opacity .55s ease-in-out;
 }
 .contactC {
 	color: white;
@@ -358,9 +379,9 @@ table {
 .contact:hover .contactT {
 	/* ...AND SO DOES 'MUSIC' */
 	opacity: 1.0;
-	transition: opacity .55s ease-in-out;
-	-moz-transition: opacity .55s ease-in-out;
-	-webkit-transition: opacity .55s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-webkit-transition: opacity 1s ease-in-out;
 }
 
 
