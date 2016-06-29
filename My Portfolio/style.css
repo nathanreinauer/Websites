@@ -142,7 +142,7 @@ table {
 	width: 100%;
 	height: 150px;
 	
-	background-color: rgba(0, 0, 0, .5);
+	background-color: rgba(0, 0, 0, .25);
 	
 	position: absolute;
 	left: 0;
@@ -486,7 +486,7 @@ table {
 .developer { 
 	display: flex;
 	display: -webkit-flex;
-	background: linear-gradient(rgba(240, 162, 2, 0.25), rgba(240, 162, 2, 0.25)), url(images/moodycoderBlur.jpg) no-repeat center center fixed; 
+	background: linear-gradient(rgba(240, 162, 2, .35), rgba(240, 162, 2, .35)), url(images/aurora.jpg) no-repeat center center fixed; /* 240, 162, 2, .25*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -542,7 +542,10 @@ table {
 .blurb2 {
 	display: flex;
 	width: 300px;
-	
+}
+
+.blurb2 a{
+	color: white;
 }
 
 .devButtons {
@@ -762,4 +765,20 @@ table {
 	animation-timing-function: linear;
 	-webkit-animation-iteration-count: 1;
 	animation-iteration-count: 1;
+}
+
+
+
+
+/* EXTRA */
+
+.coming {
+	display: flex;
+	color: white;
+	justify-content: center;
+	font-family: 'heebo';
+	font-size: 50px;
+	margin-top: 30%;
+	
+	
 }

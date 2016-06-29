@@ -1,0 +1,13 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="0">
+            <File firstVisibleLine="474" xOffset="0" scrollWidth="2840" startPos="7923" endPos="7923" selMode="0" lang="CSS" encoding="-1" filename="C:\Users\Student\Documents\GitHub\Websites\My Portfolio\style.css" backupFilePath="" originalFileLastModifTimestamp="1467179084" />
+            <File firstVisibleLine="22" xOffset="0" scrollWidth="1056" startPos="2851" endPos="2851" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\Student\Documents\GitHub\Websites\My Portfolio\developer.html" backupFilePath="" originalFileLastModifTimestamp="1467154883">
+                <Fold line="3" />
+                <Fold line="22" />
+                <Fold line="84" />
+            </File>
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>
