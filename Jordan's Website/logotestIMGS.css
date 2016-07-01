@@ -18,7 +18,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -65,11 +65,12 @@ table {
 	-webkit-font-smoothing: antialiased;
 }
 
+
 .header {
 	/*border: 1px solid yellow;*/
 	display: flex;
 	flex-direction: column;
-	width: 555px;
+	width: 540px;
 	height: 900px;
 	margin-top: 50px;
 	margin-left: auto;
@@ -97,40 +98,87 @@ table {
 	display: flex;
 	font-family: BasicTitleFont;
 	align-self: flex-start;
-	font-size: 80px;
-	color: black;
+	font-size: 75px;
 }
 
-/* MENU BAR */
+/* MENU IMAGES */
 
 .menuBar {
 	display: flex;
-	/*border: 1px solid pink;*/
-	width: 100%;
-	height: 20px;
-	flex-direction: row;
-	justify-content: flex-end;
-	z-index: 999;
-	margin-top: -22px;
-	
-	
-}
-
-.menuBar a {
+	border: 1px solid pink;
 	display: flex;
-	/*border: 1px solid green;*/
-	font-family: 'RobotoThin';
-	color: black;
-	font-size: 18px;
-	letter-spacing: 4px;
-	margin-left: 30px;
-	text-decoration: none;
-	text-shadow: 1px 0 0 black;
+	width: 100%;
+	height: 100px;
+	flex-direction: row;
+	justify-content: center;
 }
 
-.menuBar a:hover{
-	text-shadow: 1px 0 0 #DC9A8C;
-	color: #DC9A8C;
+.menuHome {
+	border: 1px solid green;
+	width: 80px;
+	height: 100%;
+	margin: auto;
+	background:transparent url('images/menu/Home.jpg')no-repeat;
+	background-size: contain;
+}
+
+.menuHome:hover {
+	width: 80px;
+	height: 100%;
+	margin: auto;
+	background:transparent url('images/menu/Home_Hover.jpg')no-repeat;
+	background-size: contain;
+}
+
+.menuDesigns {
+	border: 1px solid green;
+	width: 80px;
+	height: 100%;
+	margin: auto;
+	background:transparent url('images/menu/Designs.jpg')no-repeat;
+	background-size: contain;
+}
+
+.menuDesigns:hover {
+	width: 80px;
+	height: 100%;
+	margin: auto;
+	background:transparent url('images/menu/Designs_Hover.jpg')no-repeat;
+	background-size: contain;
+}
+
+.menuAbout {
+	border: 1px solid green;
+	width: 80px;
+	height: 100%;
+	margin: auto;
+	background:transparent url('images/menu/About.jpg')no-repeat;
+	background-size: contain;
+}
+
+.menuAbout:hover {
+	width: 80px;
+	height: 100%;
+	margin: auto;
+	background:transparent url('images/menu/About_Hover.jpg')no-repeat;
+	background-size: contain;
+}
+
+.menuContact {
+	border: 1px solid green;
+	width: 80px;
+	height: 100%;
+	margin: auto;
+	background:transparent url('images/menu/Contact.jpg')no-repeat;
+	background-size: contain;
+}
+
+.menuContact:hover {
+	width: 80px;
+	height: 100%;
+	margin: auto;
+	background:transparent url('images/menu/Contact_Hover.jpg')no-repeat;
+	background-size: contain;
 }
 
 
