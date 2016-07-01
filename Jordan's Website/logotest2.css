@@ -65,12 +65,13 @@ table {
 	-webkit-font-smoothing: antialiased;
 }
 
+/* HEADER */
+
 .header {
 	/*border: 1px solid yellow;*/
 	display: flex;
 	flex-direction: column;
 	width: 555px;
-	height: 900px;
 	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
@@ -115,24 +116,6 @@ table {
 	
 	
 }
-/*
-.menuBar a {
-	display: flex;
-	/*border: 1px solid green;*//*
-	font-family: 'RobotoThin';
-	color: black;
-	font-size: 18px;
-	letter-spacing: 4px;
-	margin-left: 30px;
-	text-decoration: none;
-	text-shadow: 1px 0 0 black;
-}
-
-.menuBar a:hover{
-	text-shadow: 1px 0 0 #DC9A8C;
-	color: #DC9A8C;
-}
-
 
 /* Effect 3: bottom line slides/fades in */
 .cl-effect-3 a {
@@ -147,7 +130,7 @@ table {
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	text-shadow: 1px 0 0 black;
-	font-size: 18px;
+	font-size: 17.5px;
 }
 
 .cl-effect-3 a::after { /* UNDERLINE */
@@ -156,7 +139,7 @@ table {
 	left: 0;
 	width: 100%;
 	height: 2px; 
-	background: rgba(220, 154, 140, .2);
+	background: rgba(220, 154, 140, .5);
 	content: '';
 	opacity: 0;
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -186,3 +169,4 @@ table {
     box-sizing: border-box;
 	outline: none;
 }
+/* END OF HEADER */

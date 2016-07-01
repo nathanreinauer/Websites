@@ -1,114 +1,129 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-
-  <title>JK | Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="JK | HOME">
-  <meta name="author" content="Jordan Kline">
-
-  <link rel="stylesheet" href="style.css">
-
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-</head>
-
-<body class="no-touch">
-<div class="header"><div class="topLine">
-	<img src="images/logo.png" alt="logo"/>
-	<h1>JORDAN KLINE</h1></div>
-	<ul>
-		<li><a href="index.html">HOME</a></li>
-		<li><a href="designs.html">DESIGNS</a></li>
-		<li><a href="about.html">ABOUT</a></li>
-		<li><a href="contact.html" style="padding-right:0">CONTACT</a></li>
-	</ul>
-</div>
-
-
-<!-- 
-PICTURES BELOW
--->
-
-<div class="wrap">
-    
-  <!-- Define all of the tiles: -->
-  <div class="box">
-    <div class="boxInner"><a href="marketplace.html">
-	  <img src="images/thMARKETPLACE1.jpg" />
-      <div class="titleBox">THE MARKETPLACE<p style="font-size:11px; font-style:italic; letter-spacing: 1px;">RETAIL</p></div>
-    </div></a>
-  </div>
-  <div class="box">
-    <div class="boxInner"><a href="vince.html">
-	  <img src="images/thVINCE1.jpg" />
-      <div class="titleBox">VINCE<p style="font-size:11px; font-style:italic; letter-spacing: 1px;">RETAIL</p></div>
-    </div></a>
-  </div>
-  <div class="box">
-    <div class="boxInner"><a href="yarrow.html">
-      <img src="images/thYARROW1.jpg" />
-	  <div class="titleBox">YARROW<p style="font-size:11px; font-style:italic; letter-spacing: 1px;">HEALTHCARE</p></div>
-    </div></a>
-  </div>
-  <div class="box">
-    <div class="boxInner"><a href="childlife.html">
-      <img src="images/thCHILDLIFE1.jpg" />
-	  <div class="titleBox">CHILDLIFE MONTESSORI<p style="font-size:11px; font-style:italic; letter-spacing: 1px;">INSTITUTIONAL</p></div>
-    </div></a>
-  </div>
-  <div class="box">
-    <div class="boxInner"><a href="pea.html">
-      <img src="images/thAPITP1.jpg" />
-	  <div class="titleBox">A PEA IN THE POD<p style="font-size:11px; font-style:italic; letter-spacing: 1px;">COMMERCIAL</p></div>
-    </div></a>
-  </div>
-  <div class="box">
-    <div class="boxInner"><a href="peri.html">
-      <img src="images/thPERIRESIDENCE1.jpg" />
-	  <div class="titleBox">PERI RESIDENCE<p style="font-size:11px; font-style:italic; letter-spacing: 1px;">RESIDENTIAL</p></div>
-    </div></a>
-  </div>
-
-  
-</div>
-<!-- /#wrap -->
-
-
-
-
-
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
-<script type="text/javascript">
-
-
-$(document).ready(function() {
-  if (location.hash) {
-    var hash = location.hash.slice(1);
-    $(".dot").eq(hash).click();
-  }
-});
-
-
-
-
-$(function(){
-   // See if this is a touch device
-   if ('ontouchstart' in window)
-   {
-      // Set the correct [touchscreen] body class
-      $('body').removeClass('no-touch').addClass('touch');
-     
-      // Add the touch toggle to show text when tapped
-      $('div.boxInner img').click(function(){
-         $(this).closest('.boxInner').toggleClass('touchFocus');
-      });
-   }
-});
-</script>
-</body>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>JK | Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="JK | HOME">
+		<meta name="author" content="Jordan Kline">
+		
+		<link rel="stylesheet" href="style.css">
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body class="no-touch">
+		
+		
+		<div class="header">
+			<div class="topLine">
+				<img src="images/Logo_Large.png" alt="logo"/>	
+				<h1>
+					JORDAN KLINE
+				</h1>
+			</div>
+			<div class="menuBar">
+				<div class="cl-effect-3">
+					<a href="index.html">
+						HOME
+					</a>
+					<a href="designs.html">
+						DESIGNS
+					</a>
+					<a href="about.html">
+						ABOUT
+					</a>
+					<a href="contact.html">
+						CONTACT
+					</a><!--style="padding-right:0"-->
+				</div></div>
+		</div>
+		
+		
+		<!-- 
+			PICTURES BELOW
+		-->
+		
+		<div class="wrap">
+			
+			<!-- Define all of the tiles: -->
+			<div class="box">
+				<div class="boxInner"><a href="marketplace.html">
+					<img src="images/thMARKETPLACE1.jpg" />
+					<div class="titleBox">THE MARKETPLACE<p style="font-size:11px; font-style:italic; letter-spacing: 1px;">RETAIL</p></div>
+				</div></a>
+			</div>
+			<div class="box">
+				<div class="boxInner"><a href="vince.html">
+					<img src="images/thVINCE1.jpg" />
+					<div class="titleBox">VINCE<p style="font-size:11px; font-style:italic; letter-spacing: 1px;">RETAIL</p></div>
+				</div></a>
+			</div>
+			<div class="box">
+				<div class="boxInner"><a href="yarrow.html">
+					<img src="images/thYARROW1.jpg" />
+					<div class="titleBox">YARROW<p style="font-size:11px; font-style:italic; letter-spacing: 1px;">HEALTHCARE</p></div>
+				</div></a>
+			</div>
+			<div class="box">
+				<div class="boxInner"><a href="childlife.html">
+					<img src="images/thCHILDLIFE1.jpg" />
+					<div class="titleBox">CHILDLIFE MONTESSORI<p style="font-size:11px; font-style:italic; letter-spacing: 1px;">INSTITUTIONAL</p></div>
+				</div></a>
+			</div>
+			<div class="box">
+				<div class="boxInner"><a href="pea.html">
+					<img src="images/thAPITP1.jpg" />
+					<div class="titleBox">A PEA IN THE POD<p style="font-size:11px; font-style:italic; letter-spacing: 1px;">COMMERCIAL</p></div>
+				</div></a>
+			</div>
+			<div class="box">
+				<div class="boxInner"><a href="peri.html">
+					<img src="images/thPERIRESIDENCE1.jpg" />
+					<div class="titleBox">PERI RESIDENCE<p style="font-size:11px; font-style:italic; letter-spacing: 1px;">RESIDENTIAL</p></div>
+				</div></a>
+			</div>
+			
+			
+		</div>
+		<!-- /#wrap -->
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		<script type="text/javascript">
+			
+			
+			$(document).ready(function() {
+				if (location.hash) {
+					var hash = location.hash.slice(1);
+					$(".dot").eq(hash).click();
+				}
+			});
+			
+			
+			
+			
+			$(function(){
+				// See if this is a touch device
+				if ('ontouchstart' in window)
+				{
+					// Set the correct [touchscreen] body class
+					$('body').removeClass('no-touch').addClass('touch');
+					
+					// Add the touch toggle to show text when tapped
+					$('div.boxInner img').click(function(){
+						$(this).closest('.boxInner').toggleClass('touchFocus');
+					});
+				}
+			});
+		</script>
+	</body>
 </html>

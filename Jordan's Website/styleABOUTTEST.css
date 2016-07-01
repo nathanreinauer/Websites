@@ -369,7 +369,7 @@ Here are our media queries to "snap" the number of tiles per row:
 
 /*  BUTTONS */
 
-/*
+
 .resume,
 .port {
   font-family: Bebas;
@@ -385,7 +385,7 @@ Here are our media queries to "snap" the number of tiles per row:
 
 a{
 	text-decoration: none;
-}*/
+}
 
 .Jordan img {
   max-width: 100%;
