@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="developer" lang="en">
+<html class="contactPage" lang="en">
 	<head>
 		<meta charset="utf-8">
 		
@@ -77,38 +77,29 @@
 			</div>
 		</div>
 		
-		<div class="textCont">
-			<div class="headline">
-				<p>I create software and websites.</p>
-				</div>
-			
-			<div class="blurbs">
-					<p>
-						I believe coding is equal parts creativity and practicality. Whether it's a 
-						console application designed to query a database or a responsive website for your 
-						band, I always make sure the end product is functional and fun, and just feels great.
-					</p>
-					<p>
-						From HTML/CSS and JavaScript to C#, Python, and SQL, I take a jack-of-all-trades 
-						approach to development. I have experience with several popular frameworks and 
-						I'm always learning new skills. If you have any questions, don't hesitate to <a href="contact.html">ask</a>.
-					</p>
-			</div>
-			
-			<div class="devButtons">
-				<a class="hvr-back-pulse" href="aboutme.html">
-					About Me
-				</a>
-				
-				<a class="hvr-back-pulse" href="projects.html">
-					Projects
-				</a>
-				
-			</div>
-			
+
+		
+		
+		
+		<div class="contactForm">
+			<p style="font-family: 'heebo'; font-size: 30px; margin-bottom: 10px;">
+			Send me an email:</p>
+			<form action="contact.php" method="post" enctype="text/plain">
+				Name<br>
+				<input type="text" name="fullname" value=""><br><br>
+				Email<br>
+				<input type="text" name="emailid" value=""><br><br>
+				Subject<br>
+				<input type="text" name="subject" value=""><br><br>
+				Message<br>
+				<textarea name="comments" rows="10" cols="50"></textarea><br><br>
+				<input type="submit" name="submit" value="SUBMIT">
+			</form>
+			<p><?php if(!empty($message)) echo $message; ?></p>
 		</div>
+	
 		
 		
 		<script src="js/scripts.js"></script>
 	</body>
-</html>									
+</html>										

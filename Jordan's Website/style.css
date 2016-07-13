@@ -266,7 +266,7 @@ This definition styles the title text box
    bottom: 0;
    left: 0;
    right: 0;
-   margin-bottom: 80px;
+   margin-bottom: 38%;
    /*margin-bottom: -60px;* ---- FOR SLIDE UP*/
    
    /* We set a partially-transparent background along with some padding: */
@@ -275,6 +275,7 @@ This definition styles the title text box
    color: #000;
    padding: 10px;
    text-align: center;
+   vertical-align: middle;
    font-family: MinionPro;
    font-size: 14px;
    letter-spacing: 2px;
@@ -340,12 +341,14 @@ Here are our media queries to "snap" the number of tiles per row:
 
 
 .about {
+	display: flex;
+	justify-content: center;
   width: 50%;
   margin: auto;
 }
+
 .about:after {
   content:" ";
-  display:block;
   clear: both;
 }
 .Jordan,
@@ -424,7 +427,17 @@ a{
 
 /* Icon Down */
 .hvr-icon-down {
-  display: inline-block;
+  border: 4px solid #4a4848;
+  padding: 10px;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+	text-decoration: none;
+font-family: Bebas;
+  font-size: 14px;
+  color: #4a4848;
+  display: flex;
+  justify-content: center;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -433,24 +446,30 @@ a{
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
+  padding-right: 0em;
+}
+
+a{
+	text-decoration: none;
 }
 .hvr-icon-down:before {
+	text-decoration: none;
   content: "\f01a";
   position: absolute;
-  right: 1em;
+  right: .5em;
   padding: 0 1px;
   font-family: FontAwesome;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
 .hvr-icon-down:hover:before, .hvr-icon-down:focus:before, .hvr-icon-down:active:before {
+	text-decoration: none;
   -webkit-animation-name: hvr-icon-down;
   animation-name: hvr-icon-down;
-  -webkit-animation-duration: 0.75s;
-  animation-duration: 0.75s;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 
@@ -491,7 +510,7 @@ input[type=button], input[type=submit], input[type=reset] {
 /* INDIVIDUAL DESIGN PAGES */
 
 .entire{
-	margin-bottom: 200px;
+	margin-bottom: 50px;
 	
 }
 
@@ -511,13 +530,12 @@ input[type=button], input[type=submit], input[type=reset] {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: rgba(220, 154, 140, .5);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-
 
 .next {
   right: 0;
@@ -526,38 +544,21 @@ input[type=button], input[type=submit], input[type=reset] {
 
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-.text {
-  color: #000000;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: -160px;
-  width: 100%;
-  text-align: center;
-   font-family: MinionPro;
-   font-size: 16px;
-   letter-spacing: 2px;
+	color: white;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .cap {
-	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	width: 50%;
 	line-height: 150%;
 	text-shadow : 0 0 0 #000000;
 	font-family: RobotoThin;
 }
-
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 
 .dot {
   cursor:pointer;

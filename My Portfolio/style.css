@@ -131,8 +131,7 @@ table {
 
 
 /* MY CODE BEGINS BELOW */
-/*
-	
+
 /* HEADER */
 
 
@@ -140,9 +139,14 @@ table {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	height: 150px;
+	height: 125px;
 	
-	background-color: rgba(0, 0, 0, .25);
+	background-color: rgba(24,24,24,.55); /* Fallback */
+	background: -webkit-linear-gradient(bottom, rgba(24,24,24,0), rgba(24,24,24,.55) 10%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, rgba(24,24,24,0), rgba(24,24,24,.55) 10%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, rgba(24,24,24,0), rgba(24,24,24,.55) 10%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, rgba(24,24,24,0), rgba(24,24,24,.55) 30%);
+	
 	
 	position: absolute;
 	left: 0;
@@ -486,15 +490,15 @@ table {
 .developer { 
 	display: flex;
 	display: -webkit-flex;
-	background: linear-gradient(rgba(240, 162, 2, .35), rgba(240, 162, 2, .35)), url(images/aurora.jpg) no-repeat center center fixed; /* 240, 162, 2, .25*/
+	background: linear-gradient(rgba(240, 162, 2, .25), rgba(240, 162, 2, .25)), url(images/bulb.jpg) no-repeat center center fixed; /* 240, 162, 2, .25*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	margin: 0;
+	margin-left: 12%;
 	padding: 0;
 	width: 100%;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .textCont{
@@ -534,18 +538,12 @@ table {
 	justify-content: space-between;
 }
 
-.blurb1{
-	display: flex;
-	width: 300px;
-}
-
-.blurb2 {
-	display: flex;
-	width: 300px;
-}
-
-.blurb2 a{
+.blurbs a{
 	color: white;
+}
+
+.blurbs p{
+	width: 300px;
 }
 
 .devButtons {
@@ -608,14 +606,272 @@ table {
 	color: white;
 }
 
-/* WRITER PAGE */
+/* SKILLS PAGE */
 
-.writer { 
-	background: black url(images/wood.jpg) no-repeat center center fixed; 
+.skillsPage { 
+	display: flex;
+	display: -webkit-flex;
+	background: linear-gradient(rgba(240, 162, 2, .25), rgba(240, 162, 2, .25)), url(images/moodycoderBlur.jpg) no-repeat center center fixed; /* 240, 162, 2, .25*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	padding: 0;
+	width: 100%;
+	justify-content: center;
+}
+
+.skillsCont{
+	/* Container for skills images and info */
+	display: flex;
+	flex-direction: column;
+	margin-top: 150px;	
+}
+
+.skillsCont h1{
+	width: 470px;
+	font-family: 'heebo';
+	font-size: 80px;
+	color: white;
+	text-align: center;
+	border: 3px dashed white;
+	margin: 10px auto;
+}
+
+.skillsRow, .rightTri{ /*SKILLSROW is for top and bottom row, RIGHTRI is for the middle one*/
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin: 20px;
+}
+
+.skillsRow img, .rightTri img {
+	width: 400px;
+	height: 400px;
+	margin: 20px;
+	border: 4px solid #303030;
+	border-radius: 25px;
+	background: #303030;
+}
+
+.skillsRow p, .rightTri p{
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	font-family: 'heebo';
+	font-size: 20px;
+	align-self: flex-end;
+	border-radius: 25px;
+	position:relative;
+	padding:20px;
+	margin: 20px;
+	color:white;
+	background:rgba(48, 48, 48, 0.65);
+	/* css3 */
+	
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+}
+.skillsRow p{
+    margin-left:50px;
+}
+.rightTri p{
+	margin-right: 50px;
+}
+/* creates triangle */
+.skillsRow p:after {
+	content:"";
+	position:absolute;
+	bottom:-35px; /* value = - border-top-width - border-bottom-width */
+	left:50px; /* controls horizontal position */
+	border-style:solid;
+	
+	/* reduce the damage in FF3.0 */
+	display:block;
+	width:0;
+	top:60%; /* controls vertical position */
+	left:-25px; /* value = - border-left-width - border-right-width */
+	bottom:auto;
+	border-width:25px 25px 25px 0;
+	border-color:transparent rgba(48,48,48,.65);
+	
+}
+
+.rightTri p:after{
+	content:"";
+	position:absolute;
+	bottom:-35px; /* value = - border-top-width - border-bottom-width */
+	right:50px; /* controls horizontal position */
+	border-style:solid;
+	
+	/* reduce the damage in FF3.0 */
+	display:block;
+	width:0;
+	top:60%; /* controls vertical position */
+	right:-25px; /* value = - border-left-width - border-right-width */
+	bottom:auto;
+	border-width: 25px 0px 25px 25px;
+	border-color: transparent rgba(48,48,48,.65);
+}
+
+
+/* ABOUT ME PAGE */
+.aboutMe { 
+	display: flex;
+	display: -webkit-flex;
+	background: linear-gradient(rgba(240, 162, 2, .25), rgba(240, 162, 2, .25)), url(images/hipstercoder.jpg) no-repeat center center fixed; /* 240, 162, 2, .25*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 0;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.about{
+	display: flex;
+	flex-direction: row;
+	margin-top: 150px;
+	justify-content: center;
+}
+
+.about img{
+	display: flex;
+	width: 300px;
+	height: 402px;
+	border: 2px solid white;
+	margin: 20px;
+}
+
+.about p{
+	display: flex;
+	width: 300px;
+	color: white;
+	font-family: 'heebo';
+	font-size: 20px;
+	margin: 20px;
+	padding: 20px;
+	border:  2px solid white;
+	border-radius: 25px;
+	background:rgba(48, 48, 48, 0.65);
+}
+
+.about h1{
+	display: flex;
+	margin-bottom: 0;
+	margin-right: -370px;
+	margin-top: 25px;
+	margin-left: 135px;
+	height: 70px;
+	padding: 20px;
+	font-family: 'heebo';
+	font-size: 73px;
+	color: white;
+	border: 3px dashed white;
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+}
+
+.hoverable {
+	cursor:default;
+	text-decoration:none;
+	
+	display: flex;
+	width: 300px;
+	color: white;
+	font-family: 'heebo';
+	font-size: 20px;
+	margin: 20px;
+	padding: 20px;
+	border:  2px solid white;
+	border-radius: 25px;
+	background:rgba(48, 48, 48, 0.65);
+}
+.hoverable .hover {
+	display:none;
+	color: rgb(255,50,50);
+}
+.hoverable:hover .normal {
+	display:none;
+}
+.hoverable:hover .hover {
+	display:inline;  /* CHANGE IF FOR BLOCK ELEMENTS */
+}
+
+/* PROJECTS PAGE */
+
+.projects { 
+	display: flex;
+	display: -webkit-flex;
+	background: linear-gradient(rgba(240, 162, 2, .1), rgba(240, 162, 2, .1)), url(images/iphone.jpg) no-repeat center center fixed; /* 240, 162, 2, .25*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 0;
+	width: 100%;
+	justify-content: space-around;
+}
+
+/* CONTACT PAGE */
+
+.contactPage { 
+	display: flex;
+	display: -webkit-flex;
+	background: linear-gradient(rgba(240, 162, 2, .1), rgba(240, 162, 2, .1)), url(images/crazysquares.jpg) no-repeat center center fixed; /* 240, 162, 2, .25*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 0;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.contactForm {
+	width: 500px;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	font-family: 'heebo';
+	line-height: 150%;
+	font-size: 13px;
+	color: white;
+}
+
+input,
+textarea{
+	width: 450px;
+	background-color: rgba(255,255,255,.85);
+	border: 2px solid #303030;
+	outline: none;
+	padding: 6px;
+	resize: none;
+	border-radius: 25px;
+}
+
+
+input[type=button], input[type=submit], input[type=reset] {
+	font-family: 'heebo';
+    text-decoration: none;
+    cursor: pointer;
+	font-size: 14px;
+	width: 100px;
+	margin-bottom: 25px;
+	color: #303030;
+}
+
+
+/* WRITER PAGE */
+
+.writer { 
+background: black url(images/wood.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
 
@@ -781,4 +1037,4 @@ table {
 	margin-top: 30%;
 	
 	
-}
+	}	
