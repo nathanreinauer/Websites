@@ -100,7 +100,8 @@ section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.2;
+	font-size: 16px;
 }
 ol,
 ul {
@@ -139,6 +140,7 @@ table {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+	min-width: 800px;
 	height: 125px;
 	
 	background-color: rgba(24,24,24,.55); /* Fallback */
@@ -150,8 +152,8 @@ table {
 	
 	position: absolute;
 	left: 0;
+	right: 0;
 	align-items: center;
-	width: 100%;
 }
 
 .logo {
@@ -176,7 +178,7 @@ table {
 	margin-left: 5%;
 	color: white;
 	font-family: 'heebo';
-	font-size: 30px;
+	font-size: 188%;
 	text-align: center;
 	width: 100px;
 }
@@ -242,7 +244,7 @@ table {
 	flex-direction: column;
 	color: white;
 	font-family: 'heebo';
-	font-size: 30px;
+	font-size: 188%;
 	text-align: center;
 	width: 150px;
 }
@@ -275,7 +277,7 @@ table {
 	margin-left: 6%;
 	color: white;
 	font-family: 'heebo';
-	font-size: 30px;
+	font-size: 188%;
 	text-align: center;
 	width: 150px;
 }
@@ -358,7 +360,7 @@ table {
 	flex-direction: column;
 	color: white;
 	font-family: 'heebo';
-	font-size: 30px;
+	font-size: 188%;
 	text-align: center;
 	width: 150px;
 }
@@ -404,6 +406,12 @@ table {
 
 /* END OF HEADER */
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
 
 .index  {
 	display: -webkit-flex;
@@ -419,30 +427,34 @@ table {
 	background-size: cover;
 	margin: 0;
 	padding: 0;
-	
+}
+
+.landingWrap{
+	display: flex;
+	margin: auto;
+	width: 100%;
+	justify-content: center;
 }
 
 .landing {
-	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	margin-top: 150px;
-	margin-left: auto;
-	margin-right: auto;
 	font-family: 'Heebo', sans-serif;
 	justify-content: center;
+	min-width: 325px;
 }
 
 .welcome {
 	display: flex;
-	font-size: 50px;
+	font-size: 313%;
 	color: white;
 }
 
 .looking {
 	display: flex;
 	flex-direction: row;
-	font-size: 20px;
+	font-size: 125%;
 }
 
 .lookingText {
@@ -458,25 +470,17 @@ table {
 	transition: color .5s ease;
 }
 
-
 .link1 {
-	color: #F0A202; /*#FFEC94; #FFD034;*/
+	color: #F0A202;
 }
 
 .link2 {
-	color: #F28500;/*#9BD1FA; #0072BB;*/
+	color: #F28500;
 }
 
 .link3 {
-	color: #D95D39;/*#B0E57C; #FF4C3B;;*/
+	color: #D95D39;
 }
-
-/*
-	If I want to make all links the same color
-	.link1, .link2, .link3 {
-	color: #3D72A4;
-	}
-*/
 
 .landingLinks a:hover {
 	color: white;	
@@ -495,13 +499,15 @@ table {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	margin-left: 12%;
+	/*margin-left: 12%;*/
 	padding: 0;
-	width: 100%;
+	width: 60%;
 	justify-content: flex-start;
 }
 
 .textCont{
+	margin-left: 35%;
+	width: 100%;
 	/* Container for main content */
 }
 
@@ -516,15 +522,14 @@ table {
 	display: -ms-flexbox;
 	display: -moz-flex;
 	display: -webkit-flex;
-	
 }
 
 .headline p{
-	margin-top: 200px;
+	margin-top: 175px;
 	background-color: transparent;
 	color: white;
 	font-family: 'Heebo', sans-serif;
-	font-size: 50px;
+	font-size: 300%;
 	width: 100%;
 	margin-bottom: 50px;
 }
@@ -533,7 +538,7 @@ table {
 	display: flex;
 	flex-direction: row;
 	color: white;
-	font-size: 20px;
+	font-size: 125%;
 	font-family: 'Heebo';
 	justify-content: space-between;
 }
@@ -584,7 +589,7 @@ table {
 	transition-property: color, background-color;
 	color: white;
 	font-family: 'heebo';
-	font-size: 20px;
+	font-size: 125%;
 	border: 2px solid white;
 	border-radius: 25px;
 	padding: 10px;
@@ -631,7 +636,7 @@ table {
 .skillsCont h1{
 	width: 470px;
 	font-family: 'heebo';
-	font-size: 80px;
+	font-size: 500%;
 	color: white;
 	text-align: center;
 	border: 3px dashed white;
@@ -659,7 +664,7 @@ table {
 	flex-direction: column;
 	width: 400px;
 	font-family: 'heebo';
-	font-size: 20px;
+	font-size: 125%;
 	align-self: flex-end;
 	border-radius: 25px;
 	position:relative;
@@ -734,6 +739,9 @@ table {
 	flex-direction: row;
 	margin-top: 150px;
 	justify-content: center;
+	width: 100%;
+	min-width: 900px;
+
 }
 
 .about img{
@@ -746,15 +754,15 @@ table {
 
 .about p{
 	display: flex;
-	width: 300px;
 	color: white;
 	font-family: 'heebo';
-	font-size: 20px;
+	font-size: 125%;
 	margin: 20px;
 	padding: 20px;
 	border:  2px solid white;
 	border-radius: 25px;
 	background:rgba(48, 48, 48, 0.65);
+	height: 40%;
 }
 
 .about h1{
@@ -766,11 +774,12 @@ table {
 	height: 70px;
 	padding: 20px;
 	font-family: 'heebo';
-	font-size: 73px;
+	font-size: 456%;
 	color: white;
 	border: 3px dashed white;
 	transform: rotate(90deg);
 	transform-origin: left top 0;
+	width: 40%;
 }
 
 .hoverable {
@@ -781,7 +790,7 @@ table {
 	width: 300px;
 	color: white;
 	font-family: 'heebo';
-	font-size: 20px;
+	font-size: 114%;
 	margin: 20px;
 	padding: 20px;
 	border:  2px solid white;
@@ -837,7 +846,7 @@ table {
 	margin-bottom: 50px;
 	font-family: 'heebo';
 	line-height: 150%;
-	font-size: 13px;
+	font-size: 100%;
 	color: white;
 }
 
@@ -857,7 +866,7 @@ input[type=button], input[type=submit], input[type=reset] {
 	font-family: 'heebo';
     text-decoration: none;
     cursor: pointer;
-	font-size: 14px;
+	font-size: 100%;
 	width: 100px;
 	margin-bottom: 25px;
 	color: #303030;
@@ -1033,7 +1042,7 @@ background-size: cover;
 	color: white;
 	justify-content: center;
 	font-family: 'heebo';
-	font-size: 50px;
+	font-size: 313%;
 	margin-top: 30%;
 	
 	

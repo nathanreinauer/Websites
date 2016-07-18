@@ -1,44 +1,45 @@
 <?php
-if(isset($_POST['submit'])) 
-{
-
-$message=
-'Full Name:	'.$_POST['fullname'].'<br />
-Subject:	'.$_POST['subject'].'<br />
-Phone:	'.$_POST['phone'].'<br />
-Email:	'.$_POST['emailid'].'<br />
-Comments:	'.$_POST['comments'].'
-';
-    require "phpmailer/class.phpmailer.php"; //include phpmailer class
-      
-    // Instantiate Class  
-    $mail = new PHPMailer();  
-   
-    // Set up SMTP  
-    $mail->IsSMTP();                  
-    $mail->SMTPAuth = true;                   
-    $mail->Host = "box894.bluehost.com";  
-    $mail->Port = 26;
-    $mail->Encoding = '7bit';
-    
-    // Authentication  
-    $mail->Username   = "contact@nathanreinauer.com"; // 
-    $mail->Password   = "Plunkers1!!"; // 
-      
-    // Compose
-    $mail->SetFrom($_POST['emailid'], $_POST['fullname']);
-    $mail->AddReplyTo($_POST['emailid'], $_POST['fullname']);
-    $mail->Subject = "New Contact Form Enquiry";      // Subject (which isn't required)  
-    $mail->MsgHTML($message);
-
-    // Send To  
-    $mail->AddAddress("contact@nathanreinauer.com", "Recipient Name"); // Where to send it - Recipient
-    $result = $mail->Send();		// Send!  
-	$message = $result ? 'Successfully Sent!' : 'Sending Failed!';      
-	unset($mail);
-
-}
+	if(isset($_POST['submit'])) 
+	{
+		
+		$message=
+		'Full Name:	'.$_POST['fullname'].'<br />
+		Subject:	'.$_POST['subject'].'<br />
+		Phone:	'.$_POST['phone'].'<br />
+		Email:	'.$_POST['emailid'].'<br />
+		Comments:	'.$_POST['comments'].'
+		';
+		require "phpmailer/class.phpmailer.php"; //include phpmailer class
+		
+		// Instantiate Class  
+		$mail = new PHPMailer();  
+		
+		// Set up SMTP  
+		$mail->IsSMTP();                  
+		$mail->SMTPAuth = true;                   
+		$mail->Host = "box894.bluehost.com";  
+		$mail->Port = 26;
+		$mail->Encoding = '7bit';
+		
+		// Authentication  
+		$mail->Username   = "contact@nathanreinauer.com"; // 
+		$mail->Password   = "Plunkers1!!"; // 
+		
+		// Compose
+		$mail->SetFrom($_POST['emailid'], $_POST['fullname']);
+		$mail->AddReplyTo($_POST['emailid'], $_POST['fullname']);
+		$mail->Subject = "New Contact Form Enquiry";      // Subject (which isn't required)  
+		$mail->MsgHTML($message);
+		
+		// Send To  
+		$mail->AddAddress("contact@nathanreinauer.com", "Contact"); // Where to send it - Recipient
+		$result = $mail->Send();		// Send!  
+		$message = $result ? 'Successfully Sent!' : 'Sending Failed! Email me directly at nathanreinauer@gmail.com.';      
+		unset($mail);
+		
+	}
 ?>
+<!DOCTYPE html>
 <html class="contactPage" lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -46,10 +47,11 @@ Comments:	'.$_POST['comments'].'
 		<title>Hi I'm Nathan</title>
 		<meta name="description" content="Portfolio Website for Nathan Reinauer">
 		<meta name="author" content="Nathan Reinauer">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
-		<script src="prefixfree.min.js"></script>		
+		<script type="text/javascript" src="prefixfree.min.js"></script>		
 		
 		<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -106,7 +108,7 @@ Comments:	'.$_POST['comments'].'
 							<a class="contactF" href="https://www.facebook.com/natethegr8est">Facebook</a>
 						</li>
 						<li>
-							<a class="contactC" href="contact.html">Contact</a>
+							<a class="contactC" href="contact.php">Contact</a>
 						</li>
 						<li>
 							<a class="contactT" href="https://twitter.com/sweetdiss">Twitter</a>
@@ -115,26 +117,26 @@ Comments:	'.$_POST['comments'].'
 				</div>
 			</div>
 		</div>
-					
-		<div style="margin: 100px auto 0;width: 300px;">
-			<h3>Contact Form</h3>
+		
+		<div class="contactForm">
+			<p style="font-family: 'heebo'; font-size: 30px; margin-bottom: 10px;">
+			Send me an email:</p>
 			<form name="form1" id="form1" action="" method="post">
-					<fieldset>
-					  <input type="text" name="fullname" placeholder="Full Name" />
-					  <br />
-					  <input type="text" name="subject" placeholder="Subject" />
-					  <br />
-					  <input type="text" name="phone" placeholder="Phone" />
-					  <br />
-					  <input type="text" name="emailid" placeholder="Email" />
-					  <br />
-					  <textarea rows="4" cols="20" name="comments" placeholder="Comments"></textarea>
-					  <br />
-					  <input type="submit" name="submit" value="Send" />
-					</fieldset>
-			</form>
-			<p><?php if(!empty($message)) echo $message; ?></p>
-		</div>
-					
-</body>
-</html>
+				<fieldset>
+					Name<br>
+					<input type="text" name="fullname" value=""><br><br>
+					Email<br>
+					<input type="text" name="emailid" value=""><br><br>
+					Subject<br>
+					<input type="text" name="subject" value=""><br><br>
+					Message<br>
+					<textarea name="comments" rows="10" cols="50"></textarea><br><br>
+					<input type="submit" name="submit" value="SEND" />	
+
+				<p style="font-family: 'heebo'; font-size: 14px;"><?php if(!empty($message)) echo $message; ?></p>
+				</fieldset>		
+				</form>
+				</div>
+				
+				</body>
+			</html>			
