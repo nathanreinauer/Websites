@@ -1,0 +1,1798 @@
+/* COLORS ***/
+html {
+  font-size: 12px; 
+
+  }
+
+body {
+  max-width: 100%;
+  padding-top: 115px;
+  font-size: 1.4em; 
+  font-family: 'Titillium Web', sans-serif;
+  }
+
+.header h1 {
+    letter-spacing: 4px;
+    /*color: #FFFFFF;*/
+    color: rgba(45, 45, 48, 1);
+}
+h3{
+    color: rgba(45, 45, 48,1);
+    }
+
+h2, h4{
+    color: rgba(255,255,255,1);
+}
+
+.overview-content h2 a {
+    color: #004271;
+    text-decoration: none;
+}
+.overview-content p, #overview-header {
+    transition:all .8s;
+    -moz-transition:all .8s; /* FIREFOX */
+    -webkit-transition:all .8s; /* SAFARI and CHROME */
+    -o-transition:all .8s; /* OPERA */
+
+    transform: scale(0.950);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+}
+.overview-content p:hover{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+#overview-header:hover{
+     transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+     -o-transform: scale(1.2);
+     -ms-transform: scale(1.2);
+ }
+
+ .testimonials-slider {
+
+    overflow:hidden;
+    position: relative;
+    min-height: 300px;
+    max-height: 300px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials-slider .btn-testimonial-read-more {
+    position: absolute;
+    bottom: 0;
+}
+/* TODO: makalii(6/7/2016): Works great on larger screens, but on mobile the text is too small as it is based on width, but doesn't scale down as I'd expect it to. Need to target and set font-size for mobile devices. */
+.testimonials-slider .testimonials-text {
+
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.5em;
+    transition:all .8s;
+    -moz-transition:all .8s; /* FIREFOX */
+    -webkit-transition:all .8s; /* SAFARI and CHROME */
+    -o-transition:all .8s; /* OPERA */
+
+    transform: scale(0.80);
+    -webkit-transform: scale(0.80);
+    -moz-transform: scale(0.80);
+    -o-transform: scale(0.80);
+    -ms-transform: scale(0.80);
+}
+
+.testimonials-slider .testimonials-text:hover {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+#topList h2 {
+	font-size: 21px;
+}
+/*Dallin's, transparency in navbar*/
+.navbar {
+    opacity: 0.93;
+}
+
+.navbar-header button {
+  background: #004271; 
+}
+
+.navbar-header button span.icon-bar {
+    background: #fff;
+}
+
+
+.dropdown-menu {
+    font-size: 1.1em;
+}
+
+
+.navbar-toggle{
+    background-color: #004271;
+}
+
+.masthead {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+
+.navText {
+    font-size: 1.5em;
+    white-space:nowrap;
+    padding: 1em;
+}
+
+.navText:hover {
+    animation: scale .5s forwards;
+    font-weight: bold;
+}
+
+
+
+	
+.footer {
+  display: block;
+  padding-top: 0px;
+  padding-bottom: 0px; 
+  font-family: 'Titillium Web', sans-serif;
+  }
+
+.clickForContactForm {
+  transition: all .2s;
+  -moz-transition: all .2s;
+  /* FIREFOX */
+  -webkit-transition: all .2s;
+  /* SAFARI and CHROME */
+  -o-transition: all .2s;
+  /* OPERA */
+  transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -o-transform: scale(0.98);
+  -ms-transform: scale(0.98); }
+
+.clickForContactForm:hover {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1); }
+
+.ScheduleTC {
+  font-size: 60%;
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+  height: 20%;
+  font-weight: bold; }
+  
+  /* Hide google plus thing */
+.googleplus {
+  display: none !important;
+  }
+  
+#rights {
+	font-size: 0.8em !important;
+	text-align: center !important;
+	/*width: 100% !important;*/
+	color: white !important;
+}
+
+#footSocial{
+	/*text-align: left !important;*/
+	width: 100% !important;
+    /*left: 0px !important;*/
+    /*left: 33%;*/
+	height: 65px !important;
+	/*float: left !important;*/
+	/*position: block !important;*/
+	margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+#footSocial a {
+/*	margin-left: 75px;
+	width: 50px !important;
+	height: 50px !important;
+	text-align: center !important;*/
+	color: white !important;
+	display: inline-block !important;
+	font-size: 2em !important; 
+	text-decoration:none;
+}
+
+#facebook{
+    margin-left: 0% !important;
+}
+#twitter{
+    margin-left: 50% !important;
+}
+#instagram{
+    margin-left: 0% !important;
+}
+#linkedin{
+    margin-left: 50% !important;
+}
+
+#twitter:hover {
+	color: #00aced !important;
+}
+
+#facebook:hover {
+	color: #3b5998 !important;
+}
+
+
+#linkedin:hover {
+	color: #007bb6 !important;
+}
+
+#instagram:hover {
+	color: #517fa4 !important;
+}
+
+#footAddress {
+	margin-left: 1%;
+	text-align: left !important;
+	width: 33% !important;
+	height: 75px !important;
+	float: left !important;
+	position: block !important;
+	color: white !important;
+}
+
+#footEmail {
+	text-align: left !important;
+	width: 33% !important;
+	height: 50px !important;
+	float: left !important;
+	position: block !important;
+	color: white !important;
+}
+
+#footPhone {
+	text-align: left !important;
+	width: 33% !important;
+	height: 50px !important;
+	float: left !important;
+	position: block !important;
+	color: white !important;
+}
+
+ .googleplus {
+   display: none !important;
+   }
+   
+ 
+ #topButton{
+	margin-left: 0px !important;
+    font-size: .9em;
+ }
+ 
+ #topList {
+	text-align: left !important;
+	margin-left: 10px; 
+ }
+ /*Dallin's - next three are mine, making the header on the index page interactive*/
+#indexHeader {
+     color: #777;
+     text-decoration: none;
+}
+/*Dallin's*/
+#indexHeaderText {
+    margin: 35px;
+    margin-bottom: 10px;
+
+
+    transition:all .5s;
+    -moz-transition:all .5s; /* FIREFOX */
+    -webkit-transition:all .5s; /* SAFARI and CHROME */
+    -o-transition:all .5s; /* OPERA */
+
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+}
+/*Dallin's*/
+#indexHeaderText:hover {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+ }
+
+ 
+ 
+ /* CONTACT INFO PAGE_SPECIFIC CSS */
+ #contactForm {
+ 	 margin-top: 10px;
+ }
+ 
+  #contactForm  #required {
+  	 text-align: left;
+	 font-size: 70%;
+	 color: grey;
+	 letter-spacing: 1px;
+	 margin-left: 8% !important;
+	 margin-bottom: -10px !important;
+
+}
+ 
+  #contactForm  #Name {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    color: rgba(45, 45, 48,1) !important;
+    letter-spacing: 1px !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	padding: 10px !important;
+	margin-top: 10px !important;
+	margin-bottom: 8px !important;
+
+}
+ 
+ #contactForm  #Email {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    color: rgba(45, 45, 48,1) !important;
+    letter-spacing: 1px !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	margin-bottom: 8px !important;
+
+}
+
+ #contactForm  #Ad {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    color: rgba(45, 45, 48,1) !important;
+    letter-spacing: 1px !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	padding: 10px !important;
+
+}
+
+ #contactForm  #Phone {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    color: rgba(45, 45, 48,1) !important;
+    letter-spacing: 1px !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	padding: 10px !important;
+	margin-bottom: 8px !important;
+
+}
+
+ #contactForm  #AddPhone {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    color: rgba(45, 45, 48,1) !important;
+    letter-spacing: 1px !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	padding: 10px !important;
+	margin-bottom: 8px !important;
+
+}
+ #contactForm  #Address {
+    height: 75px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    color: rgba(45, 45, 48,1) !important;
+    letter-spacing: 1px !important;
+    font-size: 60% !important;
+    font-weight: normal;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	padding: 10px !important;
+	margin-bottom: 0px;
+	/*margin-top: 10px !important;*/
+
+}
+
+ #contactForm  #studyDropDown {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    letter-spacing: 1px !important;
+    font-size: 60% !important;
+    font-weight: normal;
+    color: grey;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	padding: 10px !important;
+	margin-bottom: 8px !important;
+
+}
+
+ #contactForm  #Message {
+    height: 75px !important;
+    font-size: 60% !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    color: rgba(45, 45, 48,1) !important;
+    letter-spacing: 1px !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	padding: 10px !important;
+	margin-bottom: 0px !important;
+
+}
+
+ #contactForm  #hearDropDown {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    letter-spacing: 1px !important;
+    font-size: 60% !important;
+    font-weight: normal;
+    color: grey;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	padding: 10px !important;
+	margin-bottom: 8px !important;
+
+}
+
+ #contactForm  #otherchoice {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    color: rgba(45, 45, 48,1) !important;
+    letter-spacing: 1px !important;
+    /*font-size: 14px;*/
+    font-weight: bold;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	padding: 10px !important;
+	margin-bottom: 8px !important;
+ }
+ 
+ #contactForm  #callInstructions {
+	 display: none;
+	 visibility: hidden;
+	 text-align: left;
+	 font-size: 65%;
+	 color: rgba(45, 45, 48,1);
+	 letter-spacing: 1px;
+	 margin-left: 6% !important;
+	 margin-bottom: -10px !important;
+ }
+ 
+ #contactForm #datetimepicker1 {
+    height: 50px !important;
+    font-size: 60% !important;
+    font-weight: normal;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    color: rgba(45, 45, 48,1) !important;
+    letter-spacing: 1px !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	margin-bottom: 8px !important;
+ }
+#contactForm #hidePhone {
+	display: none;
+	visibility: hidden;
+}
+  #contactForm #phone_input1 {
+  height: 50px !important;
+  letter-spacing: 1px !important;
+ }
+ 
+  #contactForm #phone_input2 {
+  height: 50px !important;
+  letter-spacing: 1px !important;
+ }
+ #contactForm .btn-group {
+	width: 60px !important;
+	padding: 0px;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+ }
+ 
+ #contactForm #noButton1 {
+ 	font-size: 60% !important;
+ 	letter-spacing: 1px !important;
+	font-weight: bold;
+	/*float: right;*/
+	padding: 3px;
+ }
+  
+ #contactForm #noButton2 {
+ 	font-size: 60% !important;
+ 	letter-spacing: 1px !important;
+	font-weight: bold;
+	/*float: right;*/
+	padding: 3px;
+ }
+ 
+ #contactForm .glyphicon {
+    color: rgba(45, 45, 48,1) !important;
+    
+ }
+
+ #contactForm #hideTour {
+	display: none;
+	visibility: hidden;
+}
+  #contactForm #tour_input1 {
+  height: 50px !important;
+  letter-spacing: 1px !important;
+ }
+ 
+  #contactForm #tour_input2 {
+  height: 50px !important;
+  letter-spacing: 1px !important;
+ }
+  #contactForm  #tourInstructions {
+	 display: none;
+	 visibility: hidden;
+	 text-align: left;
+	 font-size: 65%;
+	 color: rgba(45, 45, 48,1);
+	 letter-spacing: 1px;
+	 margin-left: 6% !important;
+	 margin-bottom: -10px !important;
+ }
+
+  #contactForm #datetimepicker2 {
+    height: 50px !important;
+    font-weight: normal;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    color: rgba(45, 45, 48,1) !important;
+    letter-spacing: 1px !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	/*margin-top: 10px !important;*/
+ }
+ 
+ #contactForm  #submitButton {
+    height: 50px !important;
+    border: 3px solid rgba(45, 45, 48,1) !important;
+    background: transparent !important;
+    color: rgba(45, 45, 48,1) !important;
+    letter-spacing: 1px !important;
+	padding: 10px !important;
+	margin-top: 10px !important;
+	font-weight: bold;
+}
+
+#contactInfo [class*="fa"] {
+	margin-top: 30px;
+}
+#contactInfo p {
+	margin-bottom: 30px;
+}
+
+#contactInfo p .bottom{
+	margin-top: 30px;
+}
+#contactInfo {
+	margin-top: 10px;
+}
+
+#closeBtn{
+	position: relative;
+	left: 287px;
+	top: -10px;
+	text-decoration: none;
+	font-size: 150%;
+	color: black;
+}
+ /* END CONTACT INFO PAGE_SPECIFIC CSS */
+
+ 
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  margin-top: -45px;
+  margin-bottom: -35px;
+/* background: url(../images/pattern.png); 
+background-size: cover; */ }
+  .jumbotron h1 {
+    font-size: 2.1em;
+	font-family: 'Titillium Web', sans-serif;
+    font-style: none;
+    color: #004271; }
+  .jumbotron .btn {
+    margin-top: 10px; }
+  
+ .jumbotron2 {
+   font-size: 2.1em;
+   font-family: 'Titillium Web', sans-serif;
+   font-style: none;
+   color: #004271;
+  }
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+.nav-justified {
+    background: #fff; /*BACKGROUND COLOR OF NAVBAR*/
+    box-shadow: 0;/* 10px 15px grey; */
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
+ul.nav a:hover { 
+    color: #777 !important; /*TEXT COLOR IN NAVBAR ON HOVER*/
+    background-color:  #fff; /*BACKGROUND COLOR OF SELECTION RECTANGLE*/
+}
+
+  .nav-justified > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #777; /*TEXT COLOR IN NAVBAR*/
+    text-align: center; 
+
+  }
+
+div.row {
+  margin-top: 0px; 
+  overflow: hidden;
+  padding: 0px;
+}
+div.row p{  /*ADDED 2/9/16 TO GET SPACE BETWEEN THE SIDE OF TEXT AND GRID BOX BOUNDARIES*/
+    padding-left: 25px;
+    padding-right: 25px;
+	/*margin-top: 15px; /*THIS WAS THE ROOT CUASE OF GRID ON MOBILE HAVING SPACE BETWEEN SOME ROWS. WE MAY NEED TO SEPERATE OUT MOBILE-VS-DESKTOP ON THIS*/
+    margin-top: 0px; 
+}
+  div.row.tiles {
+    margin: 0px; } 
+    div.row.tiles img {
+      width: 200px; }
+        div.row.tiles img.img_fit {
+            width: 100%;
+            /*height: 100%;*/
+        }
+  div.row img.img_fit {
+    width: 100%; 
+    /*height: 100%;*/
+	}
+	
+  div.row div {
+    padding: 0px; /* THIS IS CAUSING THE ISSUE WITH TESTIMONIALS PAGE. 0 MAKES HOMEPAGE WORK, BUT TESTIMONIALS PAGE IMAGES CUT OFF. 30 MAKES TESTIMONIALS WORK, BUT BREAKS HOMEPAGE*/
+    border-radius: 0px;
+    font-size: 1.1em; }
+
+    div.row div .btn {
+      padding-top: 0px; }
+    div.row div.testimonial {
+      background-color: #eaeaea;
+      padding: 30px !important;
+       }
+    div.row div.contact, div.row div .form-group {
+      padding: 0px 0;
+      margin: 0; }
+    div.row div ul.tiled {
+        list-style-position: inside;
+        margin: 0;
+        padding: 0 0 0px;
+        color: #004271; }
+      div.row div ul.tiled li {
+        padding-top: 0px; }
+
+.row [class*="col-"].newTiledInfoBlack{
+  margin-bottom: -99999px; 
+  padding-bottom: 99999px; 
+}
+
+.row [class*="col-"].newTiledInfoWhite{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px; 
+  //margin-top: -100px; /* newly added*/
+  //padding-top: -100px; /* newly added*/
+}
+
+
+#carousel-home {
+  display: block;
+  margin: 0px; /*WAS 10PX AUTO*/
+  width: 100%;
+  height: 150%;
+}
+
+
+  
+.scholarship{
+	color: blue;
+}
+ 
+#iframeHomePage{
+	width: 100%;
+	height: 100%;
+ 	
+    padding: 0px;
+    height: 460px;
+    margin-bottom: -9px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px; 
+    max-width: 99999999px;
+} 
+
+#iframeOtherPages{
+	width: 100%;
+	height: 100%;
+    height: 460px;
+	margin: 0px;
+    padding: 0px;
+    align-items: center;
+    max-width: 853px;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.4); 
+  color: rgba(255,255,255,1);
+  text-align: center;
+  top: 65%;
+  bottom: auto;
+}
+
+.carousel-caption > p{
+    font-size: 60%;
+}
+
+.carousel-caption > h1{
+    font-size: 80%;
+}
+
+.carousel-indicators li { visibility: hidden; }
+
+.header{
+    /*background: rgba(45, 45, 48,1);*/
+    background: rgba(255, 255, 255, 1);
+    margin-bottom: 0px;
+    margin-top: -65px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    vertical-align: 50%;
+}
+
+footer .row {
+
+    background: rgba(45, 45, 48,1);
+    color: rgba(255,255,255,1);
+}
+
+footer .footer_nav {
+  font-size: .8em;
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0; 
+  color: white;
+  }
+  
+  footer .footer_nav li  {
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 10px;
+}
+
+footer .footer_nav a {
+	color: white;
+	text-decoration:none;
+}
+
+footer .footer_nav a:hover {
+	color: #D98D2A;
+}
+
+
+
+body.stories div.row div.img1 {
+  background: url(../images/Testimonials%201.png); }
+body.stories div.row div.img2 {
+  background: url(../images/Testimonials%202.png); }
+body.stories div.row div.img3 {
+  background: url(../images/Testimonials%203.png); }
+body.stories div.row div.img4 {
+  background: url(../images/Testimonials%204.png); }
+body.stories div.row div.img5 {
+  background: url(../images/Testimonials%205.png); }
+body.stories div.row div.img6 {
+  background: url(../images/Testimonials%206.png); }
+body.stories div.row div.img7 {
+  background: url(../images/Testimonials%207.png); }
+body.stories div.row div.img1, body.stories div.row div.img2, body.stories div.row div.img3, body.stories div.row div.img4, body.stories div.row div.img5, body.stories div.row div.img6, body.stories div.row div.img7 {
+background-size: cover ; margin: 20px; background-size:100% 100% !important ; -webkit-background-size: cover ; -moz-background-size: cover ; -o-background-size: cover !important;} /*background-sizes are added, it stretches out pictures*/
+body.stories div.row div blockquote {
+background: rgba(255, 255, 255, 0.7);
+margin: 150px 10px 10px; } 
+
+.contact {
+    background: rgba(45, 45, 48,1) !important;
+}
+
+.your-class img {
+  max-width: 100%;
+}
+
+blockquote {
+  font-style: italic;
+  border-width: 0; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+.img_fit {
+  max-width: 100%;
+  opacity: 0.4;
+  filter: alpha(opacity=40);  
+}
+
+ /*CSS for about page image hover */
+.img_fit:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+}
+  
+  .panel-title {
+      font-size: 1.3em;
+      font-weight: bold;
+
+  }
+
+.panel-title a {
+    display: block;
+    padding: 10px 15px;
+    margin: -10px -15px;
+}
+
+.panel-body {
+	font-size: 1.3em;
+}
+/*Dallin's Bad Awesome accodion effects!*/
+.panel-group .panel+.panel {
+    margin-top: 0px !important;
+}
+.panel-group .panel { /*Dallin's*/
+    margin-bottom: 0;
+    border-radius: 0px;
+    border-bottom: none;
+}
+.container .panel-group {
+    width: 90%;
+    margin:0 auto;
+}
+.bottomAccord { /*Dallin's*/
+    border-bottom: 1px solid #ddd !important;
+}
+.panel-heading { /*Dallin's*/
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.panel-body { /*Dallin's*/
+    padding: 20px 50px 30px 50px;
+}
+.panel-title:hover { /*Dallin's*/
+    text-decoration: none !important;
+    color: #D98D2A;
+}
+.panel-title a:enabled { /*Dallin's*/
+    text-decoration: none;
+}
+.panel-heading { /*Dallin*/
+    background-color: rgba(45, 45, 48, 1) !important;
+    color: #fff !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+.panel-default { /*Dallin*/
+    border-color: #fff;
+}
+.lineThrough { /*Dallin*/
+    text-decoration: line-through;
+}
+.noDecor { /*Dallin*/
+    text-decoration: none;
+    color: inherit;
+}
+.row3tile2 { /*Dallin*/
+    text-decoration: none;
+    color: inherit;
+    text-align: justify;
+    font-size: 16px;
+}
+.sixty { /*Dallin*/
+    font-size: 55%;
+}
+.MessagePopUp { /*Dallin*/
+    text-align: left;
+}
+#MessagePopUp { /*Dallin*/
+    text-align: left;
+}
+.indexIframe { /*Dallin*/
+    width: 1px; 
+    height: 1px; 
+    position: absolute; 
+    top: -100px;
+}
+.noscript { /*Dallin*/
+    display: none;
+}
+.justification { /*Dallin*/
+    text-align: justify;
+}
+#iframeEnrollment { /*Dallin*/
+    margin: 30px
+}
+#enrollmentMain { /*Dallin*/
+    height: 650px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#enrollmentMain h3 { /*Dallin*/
+    margin-top: 0px; padding-top:0px;
+}
+.contactUs { /*Dallin*/
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.taLogo { /*Dallin*/
+    width:200px;
+}
+
+.container {
+    width: 100%; 
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.onlyDisplayOnMobile{
+        display: none;
+    }
+.onlyDisplayOnDesktop{
+        display: block;
+        height: inherit !important;
+    }
+
+
+
+@media only screen and (max-width: 656px) {
+  #contactForm #callInstructions {
+    display: block;
+    visibility: visible; }
+
+  #contactForm #tourInstructions {
+    display: block;
+    visibility: visible; } }
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #contactForm #hidePhone {
+    display: block;
+    visibility: visible;
+    font-size: 60%; }
+
+  #contactForm #hideTour {
+    display: block;
+    visibility: visible;
+    font-size: 60%; }
+
+  #contactForm #origPhone {
+    display: none;
+    visibility: hidden; }
+
+  #contactForm #origTour {
+    display: none;
+    visibility: hidden; } }
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  #contactForm #hidePhone {
+    display: block;
+    visibility: visible;
+    font-size: 60%; }
+
+  #contactForm #hideTour {
+    display: block;
+    visibility: visible;
+    font-size: 60%; }
+
+  #contactForm #origPhone {
+    display: none;
+    visibility: hidden; }
+
+  #contactForm #origTour {
+    display: none;
+    visibility: hidden; } }
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .tales {
+    width: 100%; }
+
+  #contactForm #hidePhone {
+    display: block;
+    visibility: visible;
+    font-size: 60%; }
+
+  #contactForm #hideTour {
+    display: block;
+    visibility: visible;
+    font-size: 60%; }
+
+  #contactForm #origPhone {
+    display: none;
+    visibility: hidden; }
+
+  #contactForm #origTour {
+    display: none;
+    visibility: hidden; } }
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  #contactForm #hidePhone {
+    display: block;
+    visibility: visible;
+    font-size: 60%; }
+
+  #contactForm #hideTour {
+    display: block;
+    visibility: visible;
+    font-size: 60%; }
+
+  #contactForm #origPhone {
+    display: none;
+    visibility: hidden; }
+
+  #contactForm #origTour {
+    display: none;
+    visibility: hidden; } }
+@media only screen and (min-width: 480px) {
+  .testimonials-slider .testimonials-text {
+    font-size: 1.5em; } }
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .testimonials-slider .testimonials-text {
+    font-size: 1.8em; } }
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0; }
+
+  .header {
+    /*background: rgba(45, 45, 48,1);*/
+    background: white;
+    margin-bottom: -20px;
+    margin-top: -65px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    vertical-align: 0; }
+
+  #iframeHomePage {
+    width: 100%;
+    /*height: 100%;*/
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    height: 460px;
+    margin-bottom: -28px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    max-width: 99999999px; }
+
+  .onlyDisplayOnMobile {
+    display: block; }
+
+  .onlyDisplayOnDesktop {
+    display: none;
+    height: 0 !important; } }
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin-top: 0; }
+
+  footer {
+    max-width: 100%; }
+
+  footer .footer_nav {
+    font-size: 1em; }
+
+  .header {
+    /*background: rgba(45, 45, 48,1);*/
+    background: white;
+    margin-bottom: -30px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 30px;
+    vertical-align: 50%; }
+
+  .jumbotron {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0; }
+
+  #footAddress {
+    margin-left: 1%;
+    text-align: left !important;
+    width: 100% !important;
+    height: 75px !important;
+    float: left !important;
+    /*position: block !important;*/
+    color: white !important;
+    margin-bottom: 15px; }
+
+  #footEmail {
+    margin-left: 1%;
+    text-align: left !important;
+    width: 100% !important;
+    height: 50px !important;
+    float: left !important;
+    /*position: block !important;*/
+    color: white !important; }
+
+  #footPhone {
+    margin-left: 1%;
+    text-align: left !important;
+    width: 100% !important;
+    height: 50px !important;
+    float: left !important;
+    /*position: block !important;*/
+    color: white !important; }
+
+  #facebook {
+    margin-left: 0 !important; }
+
+  #twitter {
+    margin-left: 50% !important; }
+
+  #instagram {
+    margin-left: 0 !important; }
+
+  #linkedin {
+    margin-left: 50% !important; }
+
+  #iframeEnrollment {
+    width: 100%;
+    /*height: 100%;*/
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    height: 400px;
+    margin-bottom: -28px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    max-width: 99999999px; }
+
+  #iframeHomePage {
+    width: 100%;
+    /*height: 100%;*/
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    height: 400px;
+    margin-bottom: -28px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    max-width: 99999999px; }
+
+  .tales {
+    width: 100%; }
+
+  .panel-body {
+    /*Dallin's*/
+    padding: 20px 5% 30px; }
+
+  .onlyDisplayOnMobile {
+    display: block; }
+
+  .onlyDisplayOnDesktop {
+    display: none;
+    height: 0 !important; } }
+	
+	
+.tech_academy {
+  height: 75px; }
+
+.modal-button-yes{
+    border: medium;
+}
+
+.modal-button-no {
+    border: medium;
+}
+
+#topList a.btn-lg {
+	margin: 0px !important;
+}
+
+ a.btn-lg {
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 0px;
+	padding-top: 0px;
+    margin: 16px auto;
+	color: #ccc;
+	background-color: #555;
+	background: -webkit-linear-gradient(#888, #555);
+	background: linear-gradient(#888, #555);
+	border: 0 none;
+	border-radius: 3px;
+	text-shadow: 0 -1px 0 #000;
+	box-shadow: 0 1px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
+	cursor: pointer;
+    max-width: 275px;
+    width: initial;
+    vertical-align: middle;
+ }
+
+ 
+a.btn-lg:hover, a.btn-lg:focus
+{
+	-webkit-animation: pulsate 1.2s linear infinite;
+	animation: pulsate 1.2s linear infinite;
+}
+	
+@-webkit-keyframes pulsate
+{
+	0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
+	50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
+	100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
+}
+		
+@keyframes pulsate
+{
+	0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
+	50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
+	100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
+}
+
+a.btn-lg:active
+{
+	color: #fff;
+	text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff;
+	box-shadow: 0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
+	-webkit-transform: translateY(3px);
+	transform: translateY(3px);
+	-webkit-animation: none;
+	animation: none;
+}
+
+ 
+ #dialogoverlay{
+	display: none;
+	opacity: .8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	width: 100%;
+	z-index: 10;
+}
+
+#dialogbox{
+	display: none;
+	position: fixed;
+	background: #000;
+	border-radius:7px; 
+	width:550px;
+	z-index: 10;
+}
+#dialogbox > div{ background:#FFF; margin:8px; }
+#dialogbox > div > #dialogboxhead{ background: #666; font-size:19px; padding:10px; color:#CCC; }
+#dialogbox > div > #dialogboxbody{ background:#333; padding:20px; color:#FFF; }
+#dialogbox > div > #dialogboxfoot{ background: #666; padding:10px; text-align:right; }
+
+.modal-body{
+	height: 150px;
+}
+
+#coverPic {
+    top: 25%;
+    left: 16.5%;
+	width: 66%;
+    
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+
+
+
+.newTiledInfoBlack {
+    background-color: rgba(45, 45, 48, 1);
+    color:rgba(255,255,255,1);  
+    margin: 0px;
+}
+
+.newTiledInfoWhite {
+    margin: 0px;
+    background-color: rgba(255,255,255, 1);
+    color:rgba(0,0,0,1);  
+}
+
+/*#col2row1 {
+    max-height: 20px;
+}*/
+
+#col2row2{
+    opacity: .9;
+}
+
+
+.fadeIn {
+    opacity: 1;
+}
+
+
+.slideanim {visibility:hidden;}
+
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+     The duration of the animation 
+    animation-duration: 10s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+
+
+.textBased p:first-child {
+    font-size: 1.2em;
+    padding-top: 1.5em;
+}
+
+.textBased p:nth-child(2), .textBased p:nth-child(3), .textBased p:nth-child(4), .textBased p:nth-child(5){
+    font-size: 1em;
+    width: 90%;
+    text-align: justify;
+    position: relative; 
+    left: 5%;
+}
+
+.textBased:first-child p:nth-child(2), .textBased:first-child p:nth-child(3), .textBased:first-child p:nth-child(4){
+    font-size: .94em;
+}
+
+
+
+.bullets:hover, .bullets:focus, .bullets:active {
+   text-shadow: 1px 0px 20px white;
+   -webkit-transition: width 0.3s; /*Safari & Chrome*/
+   transition: width 0.3s;
+   -moz-transition: width 0.3s; /* Firefox 4 */
+   -o-transition: width 0.3s; /* Opera */
+}
+
+.bullets a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(10%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(10%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+/* Animation for pages*/
+
+
+
+@-webkit-keyframes scale{
+     0% {
+        transform: scale(1);
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari and Chrome */
+     }
+     100% {
+        transform: scale(1.5);
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari and Chrome */
+     }
+}
+
+
+/*@keyframes textblock {
+	1%  {background-color: olive;}
+	50% {background-color:lavender;}
+    100%  {background-color: lavenderblush;}
+}
+div  {
+    animation-name: textblock;
+    animation-duration: 5s;
+}  
+.row [class*="col-"] {
+	animation-name: textblock;
+    animation-duration: 5s;
+	}*/
+
+
+/* tour page css */
+
+/* adding for super sweet fade in effect - Josh */
+div#tour-container { display: none; }
+
+/* centering slide show*/
+
+.your-class { 
+	/* changed margins to fix arrow position - Josh*/
+  margin-right: 0px; 
+  margin-left: 0px; // center
+  /*width: 2365px;  small screen the page look centered*/
+  text-align:center; 
+  /* added margin to top for space between text and slideshow */
+  margin-top: 25px;
+} 
+
+/* end tour page css */
+
+
+
+/* employers page css */
+
+.emp-container {
+	line-height: 0;
+}
+
+.emp-row {
+	display: inline-block;
+	width: 100%;
+	line-height: 1.42857143;
+}
+
+.emp-row-left {
+	width: 50%;
+	height: 600px;
+	float: left; 
+}
+
+.emp-row-right {
+	width: 50%;
+	height 600px;
+	float: right;
+}
+
+#emp-large-image {
+	width: 100%;
+	height: 600px;
+}
+
+.emp-logo-container {
+	margin-top: 20px;
+}
+
+.emp-logo-row {
+	display: inline-block;
+	width: 100%;
+	margin-top: 50px;
+}
+
+#logo-row-text {
+	margin-bottom: 50px;
+}
+
+.logo {
+	height: 200px;
+	width: 200px;
+	margin-left: 15px;
+	margin-right: 15px;
+	
+}
+
+/* end employers page css */
+
+
+/* Image changes Transparency on hover Testimonial Page*/
+
+body.stories div.row div.img1 {
+    opacity: 0.4;
+    filter: alpha(opacity=40); 
+}
+body.stories div.row div.img1:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+}
+body.stories div.row div.img2 {
+    opacity: 0.4;
+    filter: alpha(opacity=40); 
+}
+body.stories div.row div.img2:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+}
+body.stories div.row div.img3 {
+    opacity: 0.4;
+    filter: alpha(opacity=40); 
+}
+body.stories div.row div.img3:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+}
+body.stories div.row div.img4 {
+    opacity: 0.4;
+    filter: alpha(opacity=40); 
+}
+body.stories div.row div.img4:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+}
+body.stories div.row div.img5 {
+    opacity: 0.4;
+    filter: alpha(opacity=40); 
+}
+body.stories div.row div.img5:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+}
+body.stories div.row div.img6 {
+    opacity: 0.4;
+    filter: alpha(opacity=40); 
+}
+body.stories div.row div.img6:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+}
+body.stories div.row div.img7 {
+    opacity: 0.4;
+    filter: alpha(opacity=40); 
+}
+body.stories div.row div.img7:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+  }
+
+
+
+/*CSS for enlarged image on hover*/
+
+/***css Style the unordered list with the class 'enlarge'***/
+ul.enlarge{
+list-style-type:none; /*remove the bullet point*/
+padding:0px; /*removes extra space*/
+}
+ul.enlarge li{
+/*display:inline-block; /*places the images in a line*/
+position: relative; /*allows precise positioning of the popup image when used with position:absolute  */
+z-index: 0; /*resets the stack order of the list items - we'll increase in step 4*/
+/*margin:10px 40px 0 20px; space between the images*/
+}
+/* to hide large if no hover*/ 
+/***In the HTML in step one we placed the large image inside a <span>, now we move it off the page until it's required***/
+ul.enlarge span{
+position:absolute; /*see support section for more info on positioning*/
+left: -9999px; /*moves the span off the page, effectively hidding it from view*/
+}
+
+/***Note: This styling will apply to both the thumbnail and popup image, unless you override these styles in step five***/
+ul.enlarge img{
+/*give the thumbnails a frame*/
+background-color:#eae9d4; /*frame colour*/
+padding: 6px; /*frame size*/
+/*add a drop shadow to the frame*/
+-webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+-moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+/*and give the corners a small curve*/
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+margin: 10px
+}
+ul.enlarge li:hover{
+z-index: 50; /*places the popups infront of the thumbnails, which we gave a z-index of 0 in step 1*/ 
+cursor:pointer; /*changes the cursor to a hand*/
+}
+
+/*** bring the large image back onto the page by reducing left from -9999px (set in step 2) to figure below***/ 
+ul.enlarge li:hover span{ /*positions the <span> when the <li> (which contains the thumbnail) is hovered*/ 
+top: 10px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+left: 400px; /*distance from the left of the thumbnail to the left of the popup image*/
+}
+
+/***Override the styling of images set in step 3 to make the frame smaller and the background darker***/
+ul.enlarge span img{
+padding: 2px; /*size of the frame*/
+background: #ccc; /*colour of the frame*/
+}
+/***Style the <span> containing the framed images and the caption***/
+ul.enlarge span{
+/**Style the frame**/
+padding: 10px; /*size of the frame*/
+background:#eae9d4; /*colour of the frame*/
+/*add a drop shadow to the frame*/
+-webkit-box-shadow: 0 0 20px rgba(0,0,0, .75));
+-moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
+box-shadow: 0 0 20px rgba(0,0,0, .75);
+/*give the corners a curve*/
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius:8px;
+/**Style the caption**/
+font-family: 'Droid Sans', sans-serif; /*Droid Sans is available from Google fonts*/
+font-size:.9em;
+text-align: center;
+color: #495a62;
+}
+
+/*Enlarges staff images on hover on staff page-MMD*/ 
+.enlarge-img  {} 
+.enlarge-img:hover  {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*Bolds staff name text on hover-MMD*/
+p.lead:hover {
+    font-weight: 800;
+}
+/*Dallin's, keeps text away from edges.*/
+#offEdges {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*Dallin's, takes away gap in index*/
+.noBottom {
+    margin-bottom: 12px !important;
+
+}
+/*
+    marg bottom, bottomExtraLine, and Founders by Dallin, for unison among staff page pictures.
+*/
+.margBottom {
+    margin-bottom: 40px;
+}
+.margBottomExtraLine {
+    margin-bottom: 11px;
+}
+.margFounders {
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+/*Dallin's, the next two make about better spaced.*/
+.largerTxt p  {
+    font-size: 1.2em;
+}
+/*Dallin's*/
+.aboutSpacing {
+    padding-top: 40px;
+}
+
+
+/*Dallin's, sets original color for transition on about*/
+.largerTxt {
+    color: #000;
+    transition-property: color;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+/*Dallin's, transitions to black*/
+/* Added for transition in font to more bold when hover*/
+.largerTxt:hover {
+    color: #000;
+    font-weight:bold;
+}
+
+#first{
+  font-size: 1.2em;
+}
+
+/* Turns text bold when hover */
+#first:hover{
+  font-weight: bold;
+}
+/*Dallin's, dynamic effect on PITC picture*/
+
+#about{
+  text-align:center;
+  font-weight:bold;
+  font-size: 1.2em;
+
+}
+@-webkit-keyframes pulse {
+    from {-webkit-transform: scale(1);}
+    to {-webkit-transform: scale(1.09);}
+}
+
+.pitc:hover { /*Dallin's */
+    -webkit-animation-name: pulse;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: .4s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* adding for super sweet fade in effect on about page - Josh */
+div#about-container { display: none; }
+
+
+/* 404 page css - Josh*/
+
+#html-404 {
+    position: relative;
+    min-height: 100%;
+}
+#body-404 {
+    margin: 0 0 264px; /* bottom = footer height */
+}
+#footer-404 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 264px;
+    width: 100%;
+}
+
+div#container-404 { display: none; }
+
+/* end 404 css */
+
