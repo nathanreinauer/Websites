@@ -398,7 +398,6 @@ a:hover .titleBox, a:focus .titleBox {
 .about {
 	display: flex;
 	justify-content: center;
-	/*width: 58%;*/
 	width: 730px;
 	margin: auto;
 	flex-direction: column;
@@ -448,45 +447,9 @@ a{
 	text-decoration: none;
 }
 
-/*
-.Jordan,
-.bio {
-	display: flex;
-	flex-direction: column;
-	width:45%;
-	padding: 8px;
-	margin-top: 75px;
-}
-.JordanInner,
-.bioInner {
-	height: 400px;
-	overflow: hidden;
-	font-family: RobotoThin;
-	font-size: 100%;
-	line-height: 175%;
-	text-shadow: 0 0 0 #000000;
-}
-.Jordan img {
-	width: 100%;
-}
 
-@media screen and (max-width: 400px) {
-	.about{
-		display: flex;
-		flex-direction: column;
-		width: 95%;
-		justify-content: center;
-		margin: 50px auto;
-		padding: 0;
-	}
-	.Jordan, .bio{
-		width: 100%;
-		margin: auto;
-		padding: 0;
-	}
-}
 
-*/
+
 /*  BUTTONS */
 
 /* Icon Down */
@@ -565,7 +528,45 @@ a{
 	animation-timing-function: ease-in-out;
 }
 
-
+@media screen and (max-width: 479px) {
+	.about{
+		width: 95%;
+		justify-content: center;
+		margin: 30px auto;
+		padding: 0;
+	}
+	.aboutTop, .aboutBottom{
+		margin: 10px auto;
+		padding: 0;
+		width: 100%;
+		flex-direction: column;
+	}
+	.JordanInner, .bioInner{
+		width: 100%;
+	}
+	.aboutTop{
+		height: 775px;
+		overflow: visible;
+	}
+	.aboutBottom{
+		margin-bottom: 50px;
+	}
+	.aboutBottom a{
+		width: 97%;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	.hvr-icon-down{
+		margin-bottom: 10px;
+	}
+	.bioInner p span{
+		display: flex;
+		justify-content: center;
+		margin-bottom: -20px;
+	}
+}
 
 
 /* CONTACT PAGE */
@@ -778,12 +779,14 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
 	width: 100%;
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 479px){
 	.credit span{
 		display: none;
 	}
 	.copyright{
 		display: inline;
+		_position: relative;
+		_top: 0;
 	}
 }
 
