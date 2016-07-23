@@ -100,36 +100,46 @@
 		
 		
 		
-		
-		
-		
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
-		<script type="text/javascript">
+		<div class="copyright">
+			<p>Copyright © 2016<p>
+			</div>
+			<div class="credit">
+				<p>
+					<span>Copyright © 2016 - </span>Designed by Jordan Kline & Developed by
+				</p>
+				<a class="hvr-bob" href="http://letsgetyou.online">
+					<img src="images/NR2.png">
+				</a>
+			</div>
 			
 			
-			$(document).ready(function() {
-				if (location.hash) {
-					var hash = location.hash.slice(1);
-					$(".dot").eq(hash).click();
-				}
-			});
-			
-			
-			
-			
-			$(function(){
-				// See if this is a touch device
-				if ('ontouchstart' in window)
-				{
-					// Set the correct [touchscreen] body class
-					$('body').removeClass('no-touch').addClass('touch');
-					
-					// Add the touch toggle to show text when tapped
-					$('div.boxInner img').click(function(){
-						$(this).closest('.boxInner').toggleClass('touchFocus');
-					});
-				}
-			});
-		</script>
-	</body>
-</html>
+			<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+			<script type="text/javascript">
+				
+				
+				$(document).ready(function() {
+					if (location.hash) {
+						var hash = location.hash.slice(1);
+						$(".dot").eq(hash).click();
+					}
+				});
+				
+				
+				
+				
+				$(function(){
+					// See if this is a touch device
+					if ('ontouchstart' in window)
+					{
+						// Set the correct [touchscreen] body class
+						$('body').removeClass('no-touch').addClass('touch');
+						
+						// Add the touch toggle to show text when tapped
+						$('div.boxInner img').click(function(){
+							$(this).closest('.boxInner').toggleClass('touchFocus');
+						});
+					}
+				});
+			</script>
+			</body>
+		</html>		

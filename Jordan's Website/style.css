@@ -139,7 +139,7 @@ table {
 	color: black;
 }
 
-@media screen and (max-width: 400px) {
+@media only screen and (max-width: 479px) {
 	.header{
 		margin-top: 10%;
 		width: 95%;
@@ -251,11 +251,9 @@ table {
 	/*border: 2px solid purple;*/
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1080px) {
 	.bigPic{
 		width: 80%;
-		margin-top: 10%;
-		
 	}
 	
 }
@@ -282,7 +280,7 @@ table {
 	position: relative;   /* The relative positioning, used in conjunction with position:absolute on boxInner, makes the boxes remain square regardless of content. */
 	width: 33%;   /* The width and padding-bottom are what determine the size of the box and make it square. */
 	padding-bottom: 33%;
-
+	
 	
 }
 
@@ -354,13 +352,19 @@ a:hover .titleBox, a:focus .titleBox {
 */
 
 @media only screen and (max-width : 480px) {
-	.box {
+	.wrap{
 		width: 100%;
-		padding-bottom: 100%;
+	}
+	.box {
+		width: 50%;
+		padding-bottom: 50%;
 	}
 }
 @media only screen and (max-width : 650px) and (min-width : 481px) {
 	/* Tablet view: 2 tiles */
+	.wrap{
+		width: 80%;
+	}
 	.box {
 		width: 50%;
 		padding-bottom: 50%;
@@ -368,6 +372,9 @@ a:hover .titleBox, a:focus .titleBox {
 }
 @media only screen and (max-width : 1050px) and (min-width : 651px) {
 	/* Small desktop / ipad view: 3 tiles */
+	.wrap{
+		width: 70%;
+	}
 	.box {
 		width: 33.3%;
 		padding-bottom: 33.3%;
@@ -375,9 +382,12 @@ a:hover .titleBox, a:focus .titleBox {
 }
 @media only screen and (max-width : 1290px) and (min-width : 1051px) {
 	/* Medium desktop: 4 tiles */
+	.wrap{
+		width: 60%;
+	}
 	.box {
-		width: 25%;
-		padding-bottom: 25%;
+		width: 33.3%;
+		padding-bottom: 33.3%;
 	}
 }
 
@@ -516,6 +526,11 @@ a{
 
 /* CONTACT PAGE */
 
+#asterisk{
+	position: relative;
+	top: -4px;
+}
+
 .contact {
 	/*width: 460px;*/
 	width: 460px;
@@ -535,13 +550,14 @@ textarea{
 	outline: none;
 	padding: 4px;
 	resize: none;
+	border-radius: 10px;
 }
 
 @media screen and (max-width: 480px) {
 	.contact{
 		width: 80%;
 	}
-
+	
 }
 
 input[type=button], input[type=submit], input[type=reset] {
@@ -553,27 +569,28 @@ input[type=button], input[type=submit], input[type=reset] {
 	width: 100px;
 	margin-bottom: 25px;
 	background-color: rgba(220, 154, 140, .1);
+	border-radius: 10px;
 	
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: color, background-color;
+	transition-property: color, background-color;
 }
 
 
 input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
-  background-color: rgba(220, 154, 140, .75);
-  text-shadow: none;
-  color: white;
+	background-color: rgba(220, 154, 140, .75);
+	text-shadow: none;
+	color: white;
 }
 
 /* INDIVIDUAL DESIGN PAGES */
@@ -623,7 +640,8 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 30px;
-	width: 70%;
+	max-width: 1000px;
+	width: 90%;
 	line-height: 150%;
 	text-shadow : 0 0 0 #000000;
 	font-family: RobotoThin;
@@ -666,3 +684,141 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
 	.slprev, .slnext,.text {font-size: 80%}
 }
 
+/* CREDIT AT BOTTOM OF PAGES */
+
+.copyright{
+	display: none;
+	font-family: RobotoThin;
+	font-size: 100%;
+	color: #b3b3b3;
+	white-space: nowrap;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	
+	bottom:30px;
+    position:fixed;
+    z-index:150;
+    _position:absolute;
+    _top:expression(eval(document.documentElement.scrollTop+
+	(document.documentElement.clientHeight-this.offsetHeight)));
+}
+
+.credit {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	white-space: nowrap;
+	
+	bottom:0;
+    position:fixed;
+    z-index:150;
+    _position:absolute;
+    _top:expression(eval(document.documentElement.scrollTop+
+	(document.documentElement.clientHeight-this.offsetHeight)));
+}
+
+.credit p{
+	font-family: RobotoThin;
+	font-size: 100%;
+	color: #b3b3b3;
+	white-space: nowrap;
+}
+
+.credit img{
+	opacity: .5;
+	width: 100%;
+}
+
+@media only screen and (max-width: 400px){
+	.credit span{
+		display: none;
+	}
+	.copyright{
+		display: inline;
+	}
+}
+
+/* Bob */
+@-webkit-keyframes hvr-bob {
+	0% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+	
+	50% {
+		-webkit-transform: translateY(-3px);
+		transform: translateY(-3px);
+	}
+	
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+@keyframes hvr-bob {
+	0% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+	
+	50% {
+		-webkit-transform: translateY(-3px);
+		transform: translateY(-3px);
+	}
+	
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+@-webkit-keyframes hvr-bob-float {
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+@keyframes hvr-bob-float {
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+.hvr-bob {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	width: 25px;
+	position: relative;
+	top: -7px;
+	margin-left: 3px;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+	-webkit-animation-name: hvr-bob-float, hvr-bob;
+	animation-name: hvr-bob-float, hvr-bob;
+	-webkit-animation-duration: .3s, 1.5s;
+	animation-duration: .3s, 1.5s;
+	-webkit-animation-delay: 0s, .3s;
+	animation-delay: 0s, .3s;
+	-webkit-animation-timing-function: ease-out, ease-in-out;
+	animation-timing-function: ease-out, ease-in-out;
+	-webkit-animation-iteration-count: 1, infinite;
+	animation-iteration-count: 1, infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-direction: normal, alternate;
+	animation-direction: normal, alternate;
+}

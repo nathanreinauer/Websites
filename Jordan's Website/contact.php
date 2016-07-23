@@ -96,25 +96,35 @@
 			I'D LOVE TO HEAR FROM YOU!</p>
 			<form name="form1" id="form1" action="" method="post">
 				<fieldset>
-				NAME (REQUIRED)<br>
-				<input type="text" name="fullname" value=""><br><br>
-				EMAIL ADDRESS (REQUIRED)<br>
-				<input type="text" name="emailid" value=""><br><br>
-				SUBJECT<br>
-				<input type="text" name="subject" value=""><br><br>
-				MESSAGE<br>
-				<textarea name="comments" rows="10" cols="50"></textarea><br><br>
-				<input type="submit" name="submit" value="SUBMIT" />	
-
-				<p style="font-family: 'MinionPro'; font-size: 14px;"><?php if(!empty($message)) echo $message; ?></p>
+					NAME<span id="asterisk">*</span><br>
+					<input type="text" name="fullname" value=""><br><br>
+					EMAIL ADDRESS<span id="asterisk">*</span><br>
+					<input type="text" name="emailid" value=""><br><br>
+					SUBJECT<span id="asterisk">*</span><br>
+					<input type="text" name="subject" value=""><br><br>
+					MESSAGE<span id="asterisk">*</span><br>
+					<textarea name="comments" rows="10" cols="50"></textarea><br><br>
+					<input type="submit" name="submit" value="SUBMIT" />	
+					
+					<p style="font-family: 'MinionPro'; font-size: 14px;"><?php if(!empty($message)) echo $message; ?></p>
 				</fieldset>		
-				</form>
-				</div>
+			</form>
+		</div>
 		
 		
 		
 		
-		
+		<div class="copyright">
+			<p>Copyright © 2016<p>
+		</div>
+		<div class="credit">
+			<p>
+				<span>Copyright © 2016 - </span>Designed by Jordan Kline & Developed by
+			</p>
+			<a class="hvr-bob" href="http://letsgetyou.online">
+				<img src="images/NR2.png">
+			</a>
+		</div>
 		
 		
 		

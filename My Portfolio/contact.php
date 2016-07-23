@@ -73,7 +73,7 @@
 						<a class="homeW" href="writer.html">Writings</a>
 					</li>
 					<li>
-						<a class="homeH" href="index.html">Home</a>
+						<a class="homeH" href="developer.html">Home</a>
 					</li>
 					<li>
 						<a class="homeM" href="musician.html">Music</a>
