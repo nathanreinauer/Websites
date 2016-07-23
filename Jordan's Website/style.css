@@ -399,17 +399,60 @@ a:hover .titleBox, a:focus .titleBox {
 	display: flex;
 	justify-content: center;
 	/*width: 58%;*/
-	width: 770px;
+	width: 730px;
 	margin: auto;
+	flex-direction: column;
 }
 
-.about:after {
-	content:" ";
-	clear: both;
+.aboutTop, .aboutBottom{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
 }
+
+.aboutTop{
+	margin-top: 75px;
+	height: 365px;
+	overflow: hidden;	
+}
+
+.JordanInner, .bioInner{
+	width: 50%;
+	padding: 8px;
+}
+
+
+.JordanInner img{
+	width: 100%;
+}
+
+.bioInner p{
+	font-family: RobotoThin;
+	font-size: 100%;
+	line-height: 175%;
+	text-shadow: 0 0 0 #000000;
+}
+
+
+.aboutBottom{	
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.aboutBottom a{
+	padding: 8px;
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*
 .Jordan,
 .bio {
-	float:left;
+	display: flex;
+	flex-direction: column;
 	width:45%;
 	padding: 8px;
 	margin-top: 75px;
@@ -426,6 +469,7 @@ a:hover .titleBox, a:focus .titleBox {
 .Jordan img {
 	width: 100%;
 }
+
 @media screen and (max-width: 400px) {
 	.about{
 		display: flex;
@@ -441,6 +485,8 @@ a:hover .titleBox, a:focus .titleBox {
 		padding: 0;
 	}
 }
+
+*/
 /*  BUTTONS */
 
 /* Icon Down */
@@ -498,9 +544,7 @@ a:hover .titleBox, a:focus .titleBox {
 	padding-right: 0em;
 }
 
-a{
-	text-decoration: none;
-}
+
 .hvr-icon-down:before {
 	text-decoration: none;
 	content: "\f01a";
