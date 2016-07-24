@@ -530,26 +530,32 @@ a{
 
 @media screen and (max-width: 479px) {
 	.about{
-		width: 95%;
+		width: 97%;
 		justify-content: center;
-		margin: 30px auto;
+		margin: 50px auto;
 		padding: 0;
 	}
 	.aboutTop, .aboutBottom{
 		margin: 10px auto;
 		padding: 0;
-		width: 100%;
 		flex-direction: column;
+		
+		
 	}
 	.JordanInner, .bioInner{
+		margin: auto;
 		width: 100%;
 	}
 	.aboutTop{
+		margin: auto;
 		height: 775px;
-		overflow: visible;
+		overflow: hidden;
+		width: 88%;
+		justify-content: center;
+		
 	}
 	.aboutBottom{
-		margin-bottom: 50px;
+		margin-bottom: 0px;
 	}
 	.aboutBottom a{
 		width: 97%;
@@ -731,7 +737,7 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
 
 /* CREDIT AT BOTTOM OF PAGES */
 
-.copyright{
+.copyrightIndex{
 	display: none;
 	font-family: RobotoThin;
 	font-size: 100%;
@@ -750,7 +756,7 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
 	(document.documentElement.clientHeight-this.offsetHeight)));
 }
 
-.credit {
+.creditIndex {
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
@@ -767,30 +773,57 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
 	(document.documentElement.clientHeight-this.offsetHeight)));
 }
 
-.credit p{
+.copyright{
+	display: none;
+	font-family: RobotoThin;
+	font-size: 100%;
+	color: #b3b3b3;
+	white-space: nowrap;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.credit {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	white-space: nowrap;
+}
+
+.credit p, .creditIndex p{
 	font-family: RobotoThin;
 	font-size: 100%;
 	color: #b3b3b3;
 	white-space: nowrap;
 }
 
-.credit img{
+.credit img, .creditIndex img{
 	opacity: .5;
 	width: 100%;
 }
 
 @media only screen and (max-width: 479px){
-	.credit span{
+	.credit span, .creditIndex span{
 		display: none;
 	}
-	.copyright{
+	.copyright, .copyrightIndex{
 		display: inline;
-		_position: relative;
-		_top: 0;
 	}
 }
 
-/* Bob */
+@media only screen and (min-width: 500px) and (max-width: 700px){
+	.creditIndex, .copyrightIndex, .credit, .copyright{
+		display: none;
+	}
+	
+}
+
+/* Bob animation on NR logo */
 @-webkit-keyframes hvr-bob {
 	0% {
 		-webkit-transform: translateY(-6px);
