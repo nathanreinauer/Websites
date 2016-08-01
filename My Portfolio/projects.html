@@ -78,9 +78,78 @@
 			</div>
 		</div>
 		
-		<br><BR><br><BR>
-				<h1 class="coming">Coming soon.</h1>
+		<br>
+		<!--<br><br><br><h1 class="coming">Coming soon.</h1>-->
 		
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 3</div>
+				<img src="images/JKweb.jpg" style="width:100%">
+				<div class="text">This is a website I created from scratch based on the client's design document,
+					and we worked together closely to ensure the final product was even better than she had hoped. 
+					It features subtle CSS animations on every button, a JavaScript slideshow, and a fully functioning contact form in PHP.
+					Plus, it's 100% responsive so it looks great on mobile, too.
+					<br>
+					<a href="http://jordankline.design">jordankline.design</a>
+				</div>
+			</div>
+			
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 3</div>
+				<img src="images/TAweb.jpg" style="width:100%">
+				<div class="text">On this project I was tasked with transitioning the Tech Academy website into a more responsive design.
+					A lot of other people had worked on it in the past, and my job was to hunt through years of HTML, CSS, Bootstrap, and JavaScript to add mobile friendly code accounting for a variety of screensizes.
+					<br>
+					<a href="http://learncodinganywhere.com">learncodinganywhere.com</a>
+				</div>
+			</div>
+			
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 3</div>
+				<img src="images/MEpy.jpg" style="width:100%">
+				<div class="text">This is an application I created in Python to assist a client who needed an easier way to update his business's website every week. Now whenever he schedules a movie to play at his theater, he simply enters the title, date, and other information into the program to be stored in a database. Then at the press of a button the application spits out a new webpage based on the current time and date. <br>
+					<a href="http://sunsettheatre.com/">sunsettheatre.com</a>
+				</div>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+		</div>	
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1} 
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none"; 
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block"; 
+				dots[slideIndex-1].className += " active";
+			}
+		</script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>										
