@@ -143,11 +143,11 @@ table {
 	min-width: 800px;
 	height: 125px;
 	
-	background-color: rgba(24,24,24,.55); /* Fallback */
-	background: -webkit-linear-gradient(bottom, rgba(24,24,24,0), rgba(24,24,24,.55) 10%); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(top, rgba(24,24,24,0), rgba(24,24,24,.55) 10%); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(top, rgba(24,24,24,0), rgba(24,24,24,.55) 10%); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to top, rgba(24,24,24,0), rgba(24,24,24,.55) 30%);
+	background-color: rgba(51,107,135,.5); 
+	/*background: -webkit-linear-gradient(bottom, rgba(24,24,24,0), rgba(51,107,135,.55) 10%); 
+    background: -o-linear-gradient(top, rgba(24,24,24,0), rgba(51,107,135,.55) 10%); 
+    background: -moz-linear-gradient(top, rgba(24,24,24,0), rgba(51,107,135,.55) 10%);
+    background: linear-gradient(to top, rgba(24,24,24,0), rgba(51,107,135,.55) 30%);*/
 	
 	
 	position: absolute;
@@ -176,7 +176,7 @@ table {
 	display: flex;
 	flex-direction: column;
 	margin-left: 5%;
-	color: white;
+	color: #D8DBE2;
 	font-family: 'heebo';
 	font-size: 188%;
 	text-align: center;
@@ -191,7 +191,7 @@ table {
 }
 .homeW {
 	/* 'WRITINGS' LINK */
-	color: #F28500;
+	color:  #f1946b;/*#F28500;*/
 	text-decoration: none;
 	opacity: 0;
 	transition: opacity .5s ease-in-out;
@@ -200,12 +200,12 @@ table {
 }
 .homeH {
 	/* 'HOME' LINK */
-	color: white;
+	color: #D8DBE2;
 	text-decoration: none;
 }
 .homeM {
 	/* 'MUSIC' LINK */
-	color: #D95D39;
+	color: #c6724d;/*#D95D39;*/
 	text-decoration: none;
 	opacity: 0;
 	transition: opacity 1s ease-in-out;
@@ -242,7 +242,7 @@ table {
 .skills {
 	display: flex;
 	flex-direction: column;
-	color: white;
+	color: #D8DBE2;
 	font-family: 'heebo';
 	font-size: 188%;
 	text-align: center;
@@ -250,13 +250,13 @@ table {
 }
 
 .skillsS:before {
-	color: white;
+	color: #D8DBE2;
 	text-decoration: none;
 	content: 'Skills';
 	
 }
 .skillsS:after {
-	color: white;
+	color: #D8DBE2;
 	opacity:0;
 	text-decoration: none;
 	content: '_';
@@ -275,7 +275,7 @@ table {
 	display: flex;
 	flex-direction: column;
 	margin-left: 6%;
-	color: white;
+	color: #D8DBE2;
 	font-family: 'heebo';
 	font-size: 188%;
 	text-align: center;
@@ -288,7 +288,7 @@ table {
 	flex-direction: column;
 }
 .linksG {
-	color: #F28500;
+	color: #58A4B0;/*#F28500;*/
 	text-decoration: none;
 	opacity: 0;
 	transition: opacity .5s ease-in-out;
@@ -302,7 +302,7 @@ table {
 }
 .linksL:before {
 	position:absolute;
-	color: white;
+	color: #D8DBE2; /*white;*/
 	text-decoration: none;
 	content: 'Links';
 	transition: opacity .85s;
@@ -310,7 +310,7 @@ table {
 	-webkit-transition: opacity .85s;
 }
 .linksL:after {
-	color: white;
+	color: #D8DBE2;/*white*/
 	opacity:0;
 	text-decoration: none;
 	content: 'Linkedin';
@@ -319,7 +319,7 @@ table {
 	-webkit-transition: opacity .85s;
 }
 .linksS {
-	color: #D95D39;
+	color: #89D7CE;/*#D95D39;*/
 	text-decoration: none;
 	opacity: 0;
 	transition: opacity 1s ease-in-out;
@@ -358,7 +358,7 @@ table {
 .contact {
 	display: flex;
 	flex-direction: column;
-	color: white;
+	color: #D8DBE2;
 	font-family: 'heebo';
 	font-size: 188%;
 	text-align: center;
@@ -379,7 +379,7 @@ table {
 	-webkit-transition: opacity .5s ease-in-out;
 }
 .contactC {
-	color: white;
+	color: #D8DBE2;
 	text-decoration: none;
 }
 .contactT {
@@ -494,7 +494,7 @@ table {
 .developer { 
 	display: flex;
 	display: -webkit-flex;
-	background: linear-gradient(rgba(240, 162, 2, .25), rgba(240, 162, 2, .25)), url(images/bulb.jpg) no-repeat center center fixed; /* 240, 162, 2, .25*/
+	background: /*linear-gradient(rgba(240, 162, 2, .25), rgba(240, 162, 2, .25)),*/ url(images/bulb.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -526,21 +526,28 @@ table {
 
 .headline p{
 	margin-top: 175px;
-	background-color: transparent;
+	/*background-color: transparent;*/
 	color: white;
 	font-family: 'Heebo', sans-serif;
 	font-size: 300%;
 	width: 100%;
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
+	padding-right: 8px;
+	padding-left: 8px;
 }
 
 .blurbs {
 	display: flex;
 	flex-direction: row;
-	color: white;
+	color: #D8DBE2;
 	font-size: 125%;
 	font-family: 'Heebo';
 	justify-content: space-between;
+	/*background-color: #88563D;*/
+	padding-top: 30px;
+	padding-bottom: 15px;
+	padding-right: 8px;
+	padding-left: 8px;
 }
 
 .blurbs a{
@@ -616,7 +623,7 @@ table {
 .skillsPage { 
 	display: flex;
 	display: -webkit-flex;
-	background: linear-gradient(rgba(240, 162, 2, .25), rgba(240, 162, 2, .25)), url(images/moodycoderBlur.jpg) no-repeat center center fixed; /* 240, 162, 2, .25*/
+	background: /*linear-gradient(rgba(240, 162, 2, .25), rgba(240, 162, 2, .25)), */url(images/moodycoderBlur.jpg) no-repeat center center fixed; /* 240, 162, 2, .25*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -724,7 +731,7 @@ table {
 .aboutMe { 
 	display: flex;
 	display: -webkit-flex;
-	background: linear-gradient(rgba(240, 162, 2, .25), rgba(240, 162, 2, .25)), url(images/hipstercoder.jpg) no-repeat center center fixed; /* 240, 162, 2, .25*/
+	background: /*linear-gradient(rgba(240, 162, 2, .25), rgba(240, 162, 2, .25)), */url(images/hipstercoder.jpg) no-repeat center center fixed; /* 240, 162, 2, .25*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
