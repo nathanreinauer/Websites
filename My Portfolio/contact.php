@@ -51,6 +51,7 @@
 		
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 		<script type="text/javascript" src="prefixfree.min.js"></script>		
 		
 		<!--[if lt IE 9]>
@@ -119,7 +120,7 @@
 		</div>
 		
 		<div class="contactForm">
-			<p style="font-family: 'heebo'; font-size: 30px; margin-bottom: 10px;">
+			<p style="font-family: 'Karla'; font-size: 30px; margin-bottom: 10px;">
 			Send me an email:</p>
 			<form name="form1" id="form1" action="" method="post">
 				<fieldset>
