@@ -85,15 +85,11 @@
 			<p style="font-family: 'heebo'; font-size: 30px; margin-bottom: 10px;">
 			Send me an email:</p>
 			<form action="contact.php" method="post" enctype="text/plain">
-				Name<br>
-				<input type="text" name="fullname" value=""><br><br>
-				Email<br>
-				<input type="text" name="emailid" value=""><br><br>
-				Subject<br>
-				<input type="text" name="subject" value=""><br><br>
-				Message<br>
-				<textarea name="comments" rows="10" cols="50"></textarea><br><br>
-				<input type="submit" name="submit" value="SUBMIT">
+				<input type="text" name="fullname" placeholder="Name" value=""><br>
+				<input type="text" name="emailid" placeholder="Email" value=""><br>
+				<input type="text" name="subject" placeholder="Subject" value=""><br>
+				<textarea name="comments" rows="10" cols="50"></textarea><br>
+				<input type="submit" name="submit" placeholder="Message" value="SUBMIT">
 			</form>
 			<p><?php if(!empty($message)) echo $message; ?></p>
 		</div>

@@ -124,20 +124,16 @@
 			Send me an email:</p>
 			<form name="form1" id="form1" action="" method="post">
 				<fieldset>
-					Name<br>
-					<input type="text" name="fullname" value=""><br><br>
-					Email<br>
-					<input type="text" name="emailid" value=""><br><br>
-					Subject<br>
-					<input type="text" name="subject" value=""><br><br>
-					Message<br>
-					<textarea name="comments" rows="10" cols="50"></textarea><br><br>
+					<input type="text" name="fullname" placeholder="Name" value=""><br>
+					<input type="text" name="emailid" placeholder="Email" value=""><br>
+					<input type="text" name="subject" placeholder="Subject" value=""><br>
+					<textarea name="comments" rows="10" cols="50"></textarea><br>
 					<input type="submit" name="submit" value="SEND" />	
-
-				<p style="font-family: 'heebo'; font-size: 14px;"><?php if(!empty($message)) echo $message; ?></p>
+					
+					<p style="font-family: 'heebo'; font-size: 14px;"><?php if(!empty($message)) echo $message; ?></p>
 				</fieldset>		
-				</form>
-				</div>
-				
-				</body>
-			</html>			
+			</form>
+		</div>
+		
+	</body>
+</html>			

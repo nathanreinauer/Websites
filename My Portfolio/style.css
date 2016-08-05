@@ -172,6 +172,8 @@ table {
 	height: 100%;
 }
 
+
+
 /* HOME LINKS --------------------------- */
 
 .home {
@@ -409,6 +411,122 @@ table {
 	-webkit-transition: opacity 1s ease-in-out;
 }
 
+
+@media only screen and (max-width: 479px){ /* Portrait */
+	html, body{
+		width: 100%;
+		height: 100%;
+	}
+	
+	.header{
+		width: 94%;
+		min-width: 94%;
+		margin: 3%;
+	}
+	
+	.home{
+		margin-left: 21px;
+	}
+	.homeH {
+		position: relative;
+		top: -6px;
+		font-size: 120%;
+		letter-spacing: 2px;
+	}
+	
+	.homeM, .homeW, .linksL:before, .contactF, .contactT, .linksG, .linksS{
+		display: none;
+	}
+	
+	.menu{
+		position: absolute;
+		top: 65px;
+		left: 140px;
+		width: 55%;
+		justify-content: space-between;
+		
+		
+	}
+	
+	.skillsS:before, .linksL:after, .contactC{
+		font-size: 50%;
+		opacity: 1;
+		margin: 0;
+	}
+	
+	.skills, .links, .contact{
+		letter-spacing: 1px;
+	}
+	
+	.skills{
+		width: 22%;/*30px;*/
+	}
+	.links{
+		width: 50%;/*100px;*/
+		margin: 0;
+	}
+	.contact{
+		width: 40%;/*50px;*/
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 736px){ /* Landscape */
+	
+	.homeM, .homeW, .linksL:before, .contactF, .contactT, .linksG, .linksS{
+		display: none;
+	}
+	
+	html, body{
+		width: 100%;
+		height: 100%;
+	}
+	
+	.header{
+		width: 96%;
+		min-width: 96%;
+		margin: 2%;
+		height: 50px;
+	}
+	
+	.home{
+		margin-left: -3%;
+	}
+	
+	.home, .menu{
+		margin-top: -4px;
+	}
+	
+	.linksL:after, .homeH, .contactC, .skillsS:before{
+		opacity: 1;
+		font-size: 65%;
+		margin: 0;
+	}
+	
+	.logo{
+		width: 45px;
+		min-width: 45px;
+		margin: 2%;
+	}
+	
+	.menu{
+		width: 35%;
+		margin-right: 2%;
+		justify-content: space-between;
+	}
+	
+	.skills{
+		width: 22%;/*30px;*/
+	}
+	.links{
+		width: 50%;/*100px;*/
+		margin: 0;
+	}
+	.contact{
+		width: 40%;/*50px;*/
+	}
+	
+}
+
 /* END OF HEADER */
 
 @media only screen 
@@ -626,6 +744,67 @@ table {
 	color: #dfe2aa;
 }
 
+@media only screen and (max-width: 479px){
+	.developer{
+		width: 100%;
+	}
+	.textCont{
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 90%;
+	}
+	
+	.headline p{
+		font-size: 200%;
+		text-align: center;
+		width: 90%;
+	}
+	
+	.blurbs{
+		flex-direction: column;
+	}
+	.blurbs p{
+		width: 100%;
+		text-align: justify;
+		margin-bottom: 6%;
+	}
+	.devButtons{
+		margin-top: 0;
+		margin-bottom: 5%;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px){ /* Landscape */
+	.developer{
+		width: 100%;
+	}
+	.textCont{
+		margin-top: -8%;
+		margin-left: 4%;
+		width: 80%;
+	}
+	
+	.headline p{
+		font-size: 150%;
+		width: 100%;
+	}
+
+	.blurbs{
+		margin-top: 1%;
+	}
+	
+	.blurbs p{
+		font-size: 75%;
+		width: 45%;
+		text-align: justify;
+		margin-bottom: 5%;
+	}
+	.devButtons{
+		margin-top: 0;
+		margin-bottom: 2%;
+	}
+
+}
 /* SKILLS PAGE */
 
 .skillsPage { 
@@ -740,7 +919,7 @@ table {
 .aboutMe { 
 	display: flex;
 	display: -webkit-flex;
-	background: /*linear-gradient(rgba(240, 162, 2, .25), rgba(240, 162, 2, .25)), */url(images/meicons.png) no-repeat center center fixed; /* 240, 162, 2, .25*/
+	background: /*linear-gradient(rgba(240, 162, 2, .25), rgba(240, 162, 2, .25)), */url(images/meicons3.jpg) no-repeat center center fixed; /* 240, 162, 2, .25*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -845,7 +1024,7 @@ table {
 .contactPage { 
 	display: flex;
 	display: -webkit-flex;
-	background: linear-gradient(rgba(240, 162, 2, .1), rgba(240, 162, 2, .1)), url(images/crazysquares.jpg) no-repeat center center fixed; /* 240, 162, 2, .25*/
+	background: linear-gradient(rgba(240, 162, 2, .1), rgba(240, 162, 2, .1)), url(images/skyline.jpeg) no-repeat center center fixed; /* 240, 162, 2, .25*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -870,12 +1049,17 @@ table {
 input,
 textarea{
 	width: 450px;
-	background-color: rgba(255,255,255,.85);
+	background-color: rgba(255,255,255,.8);
 	border: 2px solid #303030;
 	outline: none;
 	padding: 6px;
+	margin-bottom: 5px;
 	resize: none;
-	border-radius: 25px;
+	border-radius: 5px;
+}
+
+input{
+	height: 20px;
 }
 
 
@@ -887,8 +1071,15 @@ input[type=button], input[type=submit], input[type=reset] {
 	width: 100px;
 	margin-bottom: 25px;
 	color: #303030;
+	padding: 0;
+	height: 35px;
+	background-color: rgba(255,255,255,.5);
+	transition: background-color .5s;
 }
 
+input[type=submit]:hover{
+	background-color: rgba(255,255,255,.8);
+}
 
 /* WRITER PAGE */
 
@@ -1110,16 +1301,16 @@ background-size: cover;
   padding-left: 12px;
   padding-right: 12px;
   padding-bottom: 8px;
-  padding-top: 45px;
+  padding-top: 15px;
   position: absolute;
   bottom: 4px;
   width: 726px;
   text-align: justify;
   background-color: rgba(106, 142, 127,.9);
-  	background: -webkit-linear-gradient(top, rgba(24,24,24,0), rgba(106, 142, 127,.9) 10%); 
-    background: -o-linear-gradient(bottom, rgba(24,24,24,0), rgba(106, 142, 127,.9) 10%); 
-    background: -moz-linear-gradient(bottom, rgba(24,24,24,0), rgba(106, 142, 127,.9) 10%);
-    background: linear-gradient(to bottom, rgba(24,24,24,0), rgba(106, 142, 127,.9) 30%);
+  	background: -webkit-linear-gradient(top, rgba(24,24,24,0), rgba(106, 142, 127,.9) 1%); 
+    background: -o-linear-gradient(bottom, rgba(24,24,24,0), rgba(106, 142, 127,.9) 1%); 
+    background: -moz-linear-gradient(bottom, rgba(24,24,24,0), rgba(106, 142, 127,.9) 1%);
+    background: linear-gradient(to bottom, rgba(24,24,24,0), rgba(106, 142, 127,.9) 3%);
 }
 
 .text a{
