@@ -470,7 +470,7 @@ table {
 	}
 }
 
-@media only screen and (min-width: 480px) and (max-width: 736px){ /* Landscape */
+@media only screen and (min-width: 480px) and (max-width: 1024px){ /* Landscape & Tablets */
 	
 	.homeM, .homeW, .linksL:before, .contactF, .contactT, .linksG, .linksS{
 		display: none;
@@ -552,6 +552,8 @@ table {
 	padding: 0;
 }
 
+
+
 .landingWrap{
 	display: flex;
 	margin: auto;
@@ -566,6 +568,12 @@ table {
 	font-family: 'Heebo', sans-serif;
 	justify-content: center;
 	min-width: 325px;
+}
+
+@media only screen and (max-width: 1024px){
+	.landing{
+		margin-top: 0;
+	}
 }
 
 .welcome {
@@ -744,7 +752,7 @@ table {
 	color: #dfe2aa;
 }
 
-@media only screen and (max-width: 479px){
+@media only screen and (max-width: 479px){ /* Phone Portrait */
 	.developer{
 		width: 100%;
 	}
@@ -768,13 +776,13 @@ table {
 		text-align: justify;
 		margin-bottom: 6%;
 	}
-	.devButtons{
+	.devButtons, .hvr-back-pulse{
 		margin-top: 0;
-		margin-bottom: 5%;
+		margin-bottom: 20px;
 	}
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px){ /* Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px){ /* Phone Landscape */
 	.developer{
 		width: 100%;
 	}
@@ -799,12 +807,47 @@ table {
 		text-align: justify;
 		margin-bottom: 5%;
 	}
+	
+	.devButtons, .hvr-back-pulse{
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){ /* Tablet */
+	.developer{
+		width: 100%;
+	}
+	.textCont{
+		margin-top: 0%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+	}
+	
+	.headline p{
+		font-size: 200%;
+		width: 100%;
+	}
+
+	.blurbs{
+		margin-top: 5%;
+	}
+	
+	.blurbs p{
+		font-size: 100%;
+		width: 45%;
+		text-align: justify;
+		margin-bottom: 5%;
+	}
 	.devButtons{
 		margin-top: 0;
 		margin-bottom: 2%;
 	}
 
+
 }
+	
 /* SKILLS PAGE */
 
 .skillsPage { 
@@ -825,10 +868,11 @@ table {
 	display: flex;
 	flex-direction: column;
 	margin-top: 175px;	
+	overflow: hidden;
 }
 
 .skillsCont h1{
-	width: 470px;
+	width: 70%;
 	font-family: 'Monoton';
 	font-size: 400%;
 	color: white;
@@ -836,6 +880,7 @@ table {
 	border: 3px dashed white;
 	margin: 10px auto;
 	letter-spacing: 4px;
+	padding: 6px;
 }
 
 .skillsRow, .rightTri{ /*SKILLSROW is for top and bottom row, RIGHTRI is for the middle one*/
@@ -915,6 +960,93 @@ table {
 }
 
 
+@media only screen and (max-width: 479px){ /* Phone Portrait */
+	.skillsCont h1{
+		font-size: 200%;
+	}
+	
+	.skillsRow, .rightTri{ /*SKILLSROW is for top and bottom row, RIGHTRI is for the middle one*/
+		flex-direction: column;
+		margin: auto;
+	}
+
+	.skillsRow img, .rightTri img, .skillsRow p, .rightTri p {
+		margin: 20px;
+		align-self: center;
+	}
+	
+	.skillsRow img, .rightTri img{
+		width: 300px;
+		height: 300px;	
+	}
+	
+	.skillsRow p, .rightTri p{
+		width: 270px;
+		height: 270px;
+		font-size: 90%;
+		text-align: justify;
+	}
+	
+	.skillsRow p:after, .rightTri p:after{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ /* Phone Landscape */
+	
+	.skillsCont{
+		margin-top: 100px;
+	}
+
+	.skillsRow img, .rightTri img{
+		width: 200px;
+		height: 200px;	
+	}
+	
+	.skillsRow p, .rightTri p{
+		width: 270px;
+		height: 170px;
+		font-size: 68%;
+		text-align: justify;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 770px){ /* Tablet Portrait */
+	.skillsCont{
+		margin-top: 100px;
+	}
+
+	.skillsCont h1{
+		margin-bottom: 40px;
+	}
+	
+	.skillsRow, .rightTri{
+		width: 100%;
+		margin: auto;
+		justify-content: space-between;
+	}
+	
+	.skillsRow img, .rightTri img, .skillsRow p, .rightTri p {
+		margin: 20px;
+		align-self: center;
+	}	
+	
+	
+	.skillsRow img, .rightTri img{
+		width: 300px;
+		height: 300px;	
+	}
+	
+	.skillsRow p, .rightTri p{
+		width: 330px;
+		height: 260px;
+		font-size: 100%;
+		text-align: justify;
+	}
+
+
+}
+
 /* ABOUT ME PAGE */
 .aboutMe { 
 	display: flex;
@@ -927,6 +1059,20 @@ table {
 	padding: 0;
 	width: 100%;
 	justify-content: space-around;
+}
+
+.tabPort{
+	display: none;
+	margin: auto;
+	height: 80px;
+	padding: 20px;
+	font-family: 'Kalam';
+	font-size: 510%;
+	color: white;
+	border: 3px dashed white;
+	width: 40%;
+	letter-spacing: 4px;
+	
 }
 
 .about{
@@ -977,33 +1123,96 @@ table {
 	width: 40%;
 	letter-spacing: 4px;
 }
-/*
-.hoverable {
-	cursor:default;
-	text-decoration:none;
+
+@media only screen and (max-width: 479px){ /* Phone Portrait */
+	.about{
+		flex-direction: column;
+		width: 100%;
+		min-width: 100%;
+		margin-top: 0px;
+		justify-content: center;
+	}
 	
-	display: flex;
-	width: 300px;
-	color: white;
-	font-family: 'heebo';
-	font-size: 114%;
-	margin: 20px;
-	padding: 20px;
-	border:  2px solid white;
-	border-radius: 25px;
-	background:rgba(48, 48, 48, 0.65);
+	.tabPort{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 300%;
+		width: 70%;
+		height: 50px;
+		margin-top: 170px;
+		justify-content: center;
+	}
+	
+	.about h1{
+		display: none;
+	}
+	
+	.about img{
+		align-self: center;
+		width: 90%;
+		height:auto;
+	}
+
+	.about p{
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;/*290px;*/
+		margin-bottom: 20px;
+	}
+	
 }
-.hoverable .hover {
-	display:none;
-	color: rgb(255,50,50);
+
+@media only screen and (min-width: 480px) and (max-width: 768px){ /* Phone Landscape & Tablet Portrait */
+	
+	.tabPort{
+		display: flex;
+		margin-top: 100px;
+		width: 50%;
+		justify-content: center;
+		font-size: 400%;
+		height: 70px;
+	}
+	
+	.about{
+		width: 100%;
+		min-width: 100%;
+		margin-top: 0px;
+		justify-content: space-around;
+	}
+	
+	.about h1{
+		display: none;
+	}
+	
+	.about p{
+		font-size: 109%;
+		width: 300px;
+		min-width: 300px;
+		text-align: justify;
+	}
+	
+	.about img{
+		width: 40%;
+		height: 40%;
+	}
+	
 }
-.hoverable:hover .normal {
-	display:none;
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+	.about h1{
+		width: 353px;
+		font-size: 505%;
+	}
+	.about{
+		width: 100%;
+		min-width: 100%;
+		justify-content: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
-.hoverable:hover .hover {
-	display:inline;  
-}
-*/
+
 /* PROJECTS PAGE */
 
 .projects { 
@@ -1079,6 +1288,20 @@ input[type=button], input[type=submit], input[type=reset] {
 
 input[type=submit]:hover{
 	background-color: rgba(255,255,255,.8);
+}
+
+@media only screen and (max-width: 479px){
+	.contactForm{
+		width: 100%;
+		justify-content: center;
+		margin-left: 10px;
+	}
+	
+	input,
+	textarea{
+		width: 320px;
+		align-self: center;
+	}
 }
 
 /* WRITER PAGE */
@@ -1369,4 +1592,52 @@ background-size: cover;
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+@media only screen and (max-width: 479px){ /* Phone Portrait */
+	.slideshow-container{
+		width: 350px;
+	}
+	
+	.text{
+		width: 327px;
+		bottom: -280px;
+		margin-bottom: 20px;
+		
+		background-color: rgba(106, 142, 127,.75);
+			background: -webkit-linear-gradient(top, rgba(24,24,24,0), rgba(106, 142, 127,.75) 0%); 
+			background: -o-linear-gradient(bottom, rgba(24,24,24,0), rgba(106, 142, 127,.75) 0%); 
+			background: -moz-linear-gradient(bottom, rgba(24,24,24,0), rgba(106, 142, 127,.75) 0%);
+			background: linear-gradient(to bottom, rgba(24,24,24,0), rgba(106, 142, 127,.75) 0%);		
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ /* Phone Landscape */
+	.slideshow-container{
+		width: 600px;
+		margin-top: 75px;
+	}
+	
+	.text{
+		width: 576px;		
+	}
+	
+}
+	
+@media only screen and (min-width: 768px) and (max-width: 770px){ /* Tablet Portrait */
+	.slideshow-container{
+		width: 700px;
+	}
+	
+	.text{
+		width: 676px;
+		bottom: -190px;
+		
+		background-color: rgba(106, 142, 127,.75);
+			background: -webkit-linear-gradient(top, rgba(24,24,24,0), rgba(106, 142, 127,.75) 0%); 
+			background: -o-linear-gradient(bottom, rgba(24,24,24,0), rgba(106, 142, 127,.75) 0%); 
+			background: -moz-linear-gradient(bottom, rgba(24,24,24,0), rgba(106, 142, 127,.75) 0%);
+			background: linear-gradient(to bottom, rgba(24,24,24,0), rgba(106, 142, 127,.75) 0%);
+		
+	}
 }
