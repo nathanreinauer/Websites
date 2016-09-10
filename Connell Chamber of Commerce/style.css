@@ -1,0 +1,270 @@
+
+/* GENERAL */
+
+.row{
+	background-color: #EFDD8D;
+}
+
+.navbar {
+    margin-bottom: 0;
+	border:0;
+	border-radius:0;
+}
+
+/* TOP NAVIGATION BAR */
+
+.navbar.navbar-inverse.topBar{
+	background-color: #394F49;
+}
+
+/* SLIDESHOW BOX */
+
+.col-sm-6.middle{
+	height: 500px;
+	background: url('images/main.jpg'); 
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* COLUMNS ON EITHER SIDE OF SLIDESHOW */
+
+.col-sm-2.leftPic, .col-sm-2.rightPic{
+	height: 500px;
+}
+
+.col-sm-2.leftPic{
+    background: linear-gradient(
+	rgba(	239, 221, 141, 0.5), 
+	rgba(	239, 221, 141, 0.5)
+    ), url("images/Chamber-LEFT.jpg") no-repeat;
+	background-size: cover;
+    background-clip: border-box;
+}
+
+.col-sm-2.rightPic{
+    background: linear-gradient(
+	rgba(	239, 221, 141, 0.5), 
+	rgba(	239, 221, 141, 0.5)
+    ), url("images/Chamber-RIGHT.jpg") no-repeat;
+	background-size: cover;
+    background-clip: border-box;
+}
+
+/* MAIN NAVBAR HALFWAY DOWN PAGE */
+
+.navbar.navbar-inverse.midBar{
+	background-color: #65743A;
+}
+
+.nav.navbar-nav.midNav{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+/* MAIN IMAGE LINKS */
+
+.col-sm-5.leftMid{
+	height: 300px;
+	border: 4px solid #65743A;
+	border-right: 2px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	background: url('images/wheat.jpg'); 
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+}
+
+.welcomeH1{
+	font-family: 'Kaushan Script', cursive;
+}
+
+.col-sm-5.rightMid{
+	border: 2px solid #65743A;
+	text-decoration: none!important;
+}
+
+.row.topMid, .row.bottomMid{
+	height: 148px;
+	background-color: white;
+	border: 2px solid #65743A;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	text-decoration: none!important;
+}
+
+.row.topMid{
+	background: url('images/business.jpg'); 
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-decoration: none!important;
+}
+
+.row.bottomMid{
+	background: url('images/events.jpg'); 
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	text-decoration: none!important;
+}
+
+.businessH1{
+	font-family: 'Playfair Display', serif;
+	text-decoration: none!important;
+	color: black;
+}
+
+.eventsH1{
+	font-family: 'Ewert', cursive;
+	text-decoration: none!important;
+}
+
+/* HOVER EFFECTS ON MIDDLE BUTTONS */
+
+a.darken .col-sm-5.leftMid,
+a.darken .row.topMid,
+a.darken .row.bottomMid {
+	text-decoration: none!important;
+    -webkit-transition: all 0.15s ease-in-out;
+       -moz-transition: all 0.15s ease-in-out;
+        -ms-transition: all 0.15s ease-in-out;
+         -o-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out;
+}
+
+a.darken:hover .col-sm-5.leftMid,
+a.darken:hover .row.topMid,
+a.darken:hover .row.bottomMid {
+	opacity: 0.7;
+	text-decoration: none!important;
+}
+
+/* BOTTOM LINKS */
+
+.col-sm-2.blue, .col-sm-2.green {
+	background-color: #65743A;
+	height: 75px;
+	color: white;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomLinks a:visited, .bottomLinks a:active{
+	color: white;
+}
+
+/* FOOTER */
+
+.col-sm-3.pink, .col-sm-4.purple {
+	background-color: #394F49;
+	height: 125px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	color: white;
+}
+
+.footerText{
+	font-size: 80%;
+	text-align:justify;
+	text-align-last:center;
+	/* for IE9 */
+	-ms-text-align-last:center;
+}
+
+.footerText img{
+	width: 30px;
+}
+
+.footerText a:link, .footerText a:hover,
+.footerText a:visited, .footerText a:active{
+	color: white;
+}
+
+/* Bob animation on NR logo */
+@-webkit-keyframes hvr-bob {
+	0% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+	
+	50% {
+		-webkit-transform: translateY(-3px);
+		transform: translateY(-3px);
+	}
+	
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+@keyframes hvr-bob {
+	0% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+	
+	50% {
+		-webkit-transform: translateY(-3px);
+		transform: translateY(-3px);
+	}
+	
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+@-webkit-keyframes hvr-bob-float {
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+@keyframes hvr-bob-float {
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+.hvr-bob {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	width: 25px;
+	position: relative;
+	top: -4px;
+	margin-left: -2px;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+	-webkit-animation-name: hvr-bob-float, hvr-bob;
+	animation-name: hvr-bob-float, hvr-bob;
+	-webkit-animation-duration: .3s, 1.5s;
+	animation-duration: .3s, 1.5s;
+	-webkit-animation-delay: 0s, .3s;
+	animation-delay: 0s, .3s;
+	-webkit-animation-timig-function: ease-out, ease-in-out;
+	animation-timing-function: ease-out, ease-in-out;
+	-webkit-animation-iteration-count: 1, infinite;
+	animation-iteration-count: 1, infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-direction: normal, alternate;
+	animation-direction: normal, alternate;
+}
