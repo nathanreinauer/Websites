@@ -21,10 +21,12 @@
 
 .col-sm-6.middle{
 	height: 500px;
-	background: url('images/main.jpg'); 
-	background-size: 100%;
+	/*
+	background: url('images/main.jpg');
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	*/
 }
 
 /* COLUMNS ON EITHER SIDE OF SLIDESHOW */
@@ -73,7 +75,7 @@
     align-items: center;
     justify-content: center;
 	background: url('images/wheat.jpg'); 
-	background-size: 100%;
+	background-size: 125%;
 	background-repeat: no-repeat;
 	background-position: center;
 	color: white;
@@ -118,12 +120,13 @@
 .businessH1{
 	font-family: 'Playfair Display', serif;
 	text-decoration: none!important;
-	color: black;
+	color: #394F49;
 }
 
 .eventsH1{
 	font-family: 'Ewert', cursive;
 	text-decoration: none!important;
+	color: #a39493;
 }
 
 /* HOVER EFFECTS ON MIDDLE BUTTONS */
@@ -131,19 +134,25 @@
 a.darken .col-sm-5.leftMid,
 a.darken .row.topMid,
 a.darken .row.bottomMid {
-	text-decoration: none!important;
+
     -webkit-transition: all 0.15s ease-in-out;
        -moz-transition: all 0.15s ease-in-out;
         -ms-transition: all 0.15s ease-in-out;
          -o-transition: all 0.15s ease-in-out;
             transition: all 0.15s ease-in-out;
+
 }
 
-a.darken:hover .col-sm-5.leftMid,
+a.darken:hover .col-sm-5.leftMid {
+	opacity: 0.8;
+	background-size: 135%;
+}
+
 a.darken:hover .row.topMid,
-a.darken:hover .row.bottomMid {
-	opacity: 0.7;
-	text-decoration: none!important;
+a.darken:hover .row.bottomMid{
+	opacity: 0.8;
+	background-size: 115%;
+	
 }
 
 /* BOTTOM LINKS */
