@@ -987,8 +987,48 @@ table {
 		text-align: justify;
 	}
 	
+	/*
 	.skillsRow p:after, .rightTri p:after{
 		display: none;
+	}
+	*/
+	
+	
+	/* creates triangle */
+	.skillsRow p:after {
+		content:"";
+		position:absolute;
+		/*left:50px; /* controls horizontal position */
+		border-style:solid;
+		
+		/* reduce the damage in FF3.0 */
+		display:block;
+		width:0;
+		height: 0;
+		top: -25px; /* controls vertical position */
+		left:130px; /* value = - border-left-width - border-right-width */
+		bottom:auto;
+		border-width:0px 25px 25px 25px;
+		border-color:transparent transparent rgba(48,48,48,.65) transparent;
+		
+		
+
+
+		
+	}
+
+	.rightTri p:after{
+		content:"";
+		position:absolute;
+		border-style:solid;
+		
+		/* reduce the damage in FF3.0 */
+		display:block;
+		width:0;
+		left:130px; /* value = - border-left-width - border-right-width */
+		top:310px;
+		border-width: 25px 25px 0px 25px;
+		border-color: rgba(48,48,48,.65) transparent;
 	}
 }
 
