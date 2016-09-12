@@ -13,6 +13,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	</head>
 	<body>
 		
@@ -105,9 +106,22 @@
 								<li>
 									<a href="about.html" class="demo-3"> <span data-text="About">About</span></a>
 								</li> 
-								<li>
-									<a href="chamber.html" class="demo-3"> <span data-text="Chamber">Chamber</span></a> 
-									<!-- Will have dropdown links 'Join Chamber', 'Board', 'Members'-->
+								<li class="dropdown">
+									<a href="chamber.html" class="demo-3" class="dropdown-toggle" data-toggle="dropdown"> 
+									<span data-text="Chamber...">Chamber...</span>
+									</a> 
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">Join Chamber</a>
+										</li>
+										<li>
+											<a href="#">Board</a>
+										</li>
+										<li>
+											<a href="#">Members</a>
+										</li>
+									
+									</ul>
 								</li>
 							</ul>
 						</div>
@@ -209,5 +223,16 @@
 	}) </script>
 	-->
 	
+	<script> 
+	<!-- JAVASCRIPT ONLY TRANSITION FOR DROPDOWN MENU -->
+	
+	$('.navbar .dropdown').hover(function() {
+  $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideDown();
+  }, function() {
+  $(this).find('.dropdown-menu').first().stop(true, true).delay(0).slideUp()
+});
+	
+	
+	</script>
 	</body>
 </html>
