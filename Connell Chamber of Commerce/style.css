@@ -2,7 +2,7 @@
 /* GENERAL */
 
 .row{
-	background-color: #EFDD8D;
+	background-color: #EEEBD3;/*#BFC0C0;#EFDD8D;*/
 }
 
 .navbar {
@@ -137,8 +137,8 @@ margin:0 auto; /* center your carousel if other than 100% */
 
 .col-sm-2.leftPic{
     background: linear-gradient(
-	rgba(	239, 221, 141, 0.5), 
-	rgba(	239, 221, 141, 0.5)
+	rgba(	238,235,211, 0.9), 
+	rgba(	238,235,211, 0.9)
     ), url("images/Chamber-LEFT.jpg") no-repeat;
 	background-size: cover;
     background-clip: border-box;
@@ -146,8 +146,8 @@ margin:0 auto; /* center your carousel if other than 100% */
 
 .col-sm-2.rightPic{
     background: linear-gradient(
-	rgba(	239, 221, 141, 0.5), 
-	rgba(	239, 221, 141, 0.5)
+	rgba(	238,235,211, 0.9), 
+	rgba(	238,235,211, 0.9)
     ), url("images/Chamber-RIGHT.jpg") no-repeat;
 	background-size: cover;
     background-clip: border-box;
@@ -404,7 +404,9 @@ margin:0 auto; /* center your carousel if other than 100% */
 	color: white;
 	font-family: 'Heebo', sans-serif;
 	background-color: rgba(	57, 79, 73,.4);
-	padding: 5px;
+	padding: 10px;
+	border: 2px solid 0;
+	border-radius: 9px;
 }
 
 .col-sm-5.rightMid{
