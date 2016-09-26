@@ -51,6 +51,15 @@
 	background-color: rgba(250,250,250,.25);
 }
 
+@media only screen and (max-width: 767px){
+	.navbar-header{
+		justify-content: center;
+	}
+	.nav.navbar-nav.navbar-right{
+		display: none;
+	}
+}
+
 /* SLIDESHOW BOX */
 
 .col-sm-6.middle{
@@ -67,9 +76,6 @@ height: 500px; /* This is your slider height */
 width:100%; 
 margin:0 auto; /* center your carousel if other than 100% */ 
 }
-
-
-
 
 /*
 	Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
@@ -128,6 +134,12 @@ margin:0 auto; /* center your carousel if other than 100% */
     }
 }
 
+@media only screen and (max-width: 767px){
+	.col-sm-6.middle, .slider-size{
+		height: 250px;
+	}
+}
+
 /* COLUMNS ON EITHER SIDE OF SLIDESHOW */
 
 .col-sm-2.leftPic, .col-sm-2.rightPic{
@@ -168,6 +180,13 @@ margin:0 auto; /* center your carousel if other than 100% */
 	letter-spacing: 2px;
 }
 
+@media only screen and (max-width: 767px){
+	.nav.navbar-nav.midNav{
+		font-size: 100%;
+		margin-left: 5px;
+	}
+	
+}
 
 .navbar-inverse .navbar-nav>.active>a, 
 .navbar-inverse .navbar-nav>.active>a:focus, 
@@ -323,6 +342,12 @@ margin:0 auto; /* center your carousel if other than 100% */
   transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
 }
 
+@media only screen and (max-width: 767px){
+	.demo-3 span, .demo-4 span, .demo-3 span:after, .demo-4 span:after{
+		padding: 10px 10px;
+	}
+}
+
 /* DROPDOWN MENU */
 
 .dropdown-menu{
@@ -345,6 +370,14 @@ margin:0 auto; /* center your carousel if other than 100% */
 	color: #394F49
 }
 
+@media only screen and (max-width: 767px){
+	.dropdown-menu{
+		margin-left: -20px;
+	}
+	.col-sm-10.col-xs-12{
+		border: 0;
+	}
+}
 
 /* DROPDOWN ANIMATION CSS ONLY VERSION
 .dropdown .dropdown-menu {
@@ -384,13 +417,20 @@ margin:0 auto; /* center your carousel if other than 100% */
 	background-repeat: no-repeat;
 	background-position: center;
 	color: white;
+	text-decoration: none!important;
 }
+
+.col-sm-5.leftMid div, a.darken{
+	text-decoration: none!important;
+}
+
 
 .welcomeH1{
 	font-family: 'Kaushan Script', cursive;
 	text-align: center;
 	padding-right: 10px;
 	margin-bottom: 20px;
+	text-decoration: none!important;
 }
 
 .welcomeP{
@@ -457,6 +497,28 @@ margin:0 auto; /* center your carousel if other than 100% */
 	color: #a39493;
 }
 
+@media only screen and (max-width: 767px){
+	.col-sm-5.leftMid{
+		border: 4px solid #65743A;
+		border-top: 0;
+		height: 75px;
+	}
+	.col-sm-5.rightMid{
+		height: 150px;
+	}
+	.row.topMid, .row.bottomMid{
+		height: 75px;
+	}
+	.welcomeP{
+		display: none;
+	}
+	.eventsH1, .welcomeH1, .businessH1{
+		text-align: center;
+		font-size: 200%;
+	}
+	
+}
+
 /* HOVER EFFECTS ON MIDDLE BUTTONS */
 
 a.darken .col-sm-5.leftMid,
@@ -496,8 +558,15 @@ a.darken:hover .row.bottomMid{
 	text-align: center;
 }
 
-.bottomLinks a:visited, .bottomLinks a:active{
-	color: white;
+.col-sm-2.blue a, .col-sm-2.green a, .bottomLinks a:visited, .bottomLinks a:active {
+	color: white;	
+}
+
+@media only screen and (max-width: 767px){
+	.col-sm-2.blue, .col-sm-2.green{
+		font-size: 13px;
+		height: 50px;
+	}
 }
 
 /* FOOTER */
@@ -509,6 +578,15 @@ a.darken:hover .row.bottomMid{
     align-items: center;
     justify-content: center;
 	color: white;
+}
+
+@media only screen and (max-width: 767px){
+	.col-sm-3.pink{
+		height: 20px;
+	}
+	.col-sm-4.purple{
+		height: 100px;
+	}
 }
 
 .footerText{
