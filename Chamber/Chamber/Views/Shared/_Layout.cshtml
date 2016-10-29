@@ -1,13 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Connell Chamber of Commerce</title>
+    <title>@ViewBag.Title - Connell Chamber of Commerce</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/Content/Site.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
@@ -39,12 +38,12 @@
             <div class="col-sm-2 blue col-xs-6">
                 <div class="bottomLinks">
                     <a href="#">Contact</a><br>
-                    <a href="#">Events</a>
+                    <a href="@Url.Action("Events", "Home")">Events</a>
                 </div>
             </div>
             <div class="col-sm-2 green col-xs-6">
                 <div class="bottomLinks">
-                    <a href="http://elephants.com">Facebook</a><br>
+                    <a href="https://www.facebook.com/Greater-Connell-Area-Chamber-of-Commerce-143726312448731/">Facebook</a><br>
                     <a href="http://cars.com">Businesses</a>
                 </div>
             </div>
@@ -56,13 +55,13 @@
             </div>
             <div class="col-sm-2 green col-xs-4">
                 <div class="bottomLinks">
-                    <a href="#">City of Connell</a><br>
-                    <a href="#">Franklin County</a>
+                    <a href="http://www.cityofconnell.com/">City of Connell</a><br>
+                    <a href="http://www.co.franklin.wa.us/">Franklin County</a>
                 </div>
             </div>
             <div class="col-sm-2 blue col-xs-4">
                 <div class="bottomLinks">
-                    <a href="#">Fall Festival</a><br>
+                    <a href="http://www.connellfallfestival.com/">Fall Festival</a><br>
                     <a href="http://msn.com/">Another Link</a>
                 </div>
             </div>
@@ -114,6 +113,7 @@
 
 
     </script>
+
 
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script src="~/Scripts/bootstrap.min.js"></script>

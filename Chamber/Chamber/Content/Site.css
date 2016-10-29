@@ -1,6 +1,11 @@
 ﻿
 /* GENERAL */
 
+.container-fluid > .row { /* Fixes weird issue with rows overflowing and causing horizontal scroll bar */
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 .row{
 	background-color: #EEEBD3;/*#BFC0C0;#EFDD8D;*/
 }

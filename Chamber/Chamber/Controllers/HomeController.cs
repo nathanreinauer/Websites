@@ -12,5 +12,15 @@ namespace Chamber.Controllers
         {
             return View();
         }
+
+        public ActionResult Events()
+        {
+            return View();
+        }
+
+        public ActionResult About()
+        {
+            return View();
+        }
     }
 }
