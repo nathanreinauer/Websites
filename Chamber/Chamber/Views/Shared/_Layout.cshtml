@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Connell Chamber of Commerce</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/Site.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-inverse topBar">
+        <div class="container content">
+            <div class="navbar-header">
+                <img src="~/Content/Images/waStar.png" style="width: 50px; margin-right: 18px;">Connell Chamber of Commerce
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><p id="phoneNum">(509)234-8731</p></li>
+                <li><a href="mailto:connellchamber@gmail.com" id="emailIcon"><img style="width: 20px" src="~/Content/Images/email.png"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1 hidden-xs"></div>
+            <div class="col-sm-2 blue col-xs-6">
+                <div class="bottomLinks">
+                    <a href="#">Contact</a><br>
+                    <a href="#">Events</a>
+                </div>
+            </div>
+            <div class="col-sm-2 green col-xs-6">
+                <div class="bottomLinks">
+                    <a href="http://elephants.com">Facebook</a><br>
+                    <a href="http://cars.com">Businesses</a>
+                </div>
+            </div>
+            <div class="col-sm-2 blue col-xs-4">
+                <div class="bottomLinks">
+                    <a href="#">Members</a><br>
+                    <a href="#">Sign Up</a>
+                </div>
+            </div>
+            <div class="col-sm-2 green col-xs-4">
+                <div class="bottomLinks">
+                    <a href="#">City of Connell</a><br>
+                    <a href="#">Franklin County</a>
+                </div>
+            </div>
+            <div class="col-sm-2 blue col-xs-4">
+                <div class="bottomLinks">
+                    <a href="#">Fall Festival</a><br>
+                    <a href="http://msn.com/">Another Link</a>
+                </div>
+            </div>
+            <div class="col-sm-1 hidden-xs"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1 hidden-xs"></div>
+            <div class="col-sm-3 pink hidden-xs">
+                <div class="footerText">Connell Chamber of Commerce © 2016</div>
+            </div>
+            <div class="col-sm-4 purple">
+                <div class="footerText">
+                    Connell Chamber of Commerce<br>
+                    600 S Columbia Ave, Connell, WA 99326<br>
+                    (509) 234-8731<br>
+                    <a href="mailto:connellchamber@gmail.com">connellchamber@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-sm-3 pink visible-xs">
+                <div class="footerText">Connell Chamber of Commerce © 2016</div>
+            </div>
+            <div class="col-sm-3 pink">
+                <div class="footerText">
+                    Website Designed & Developed by
+                    <a class="hvr-bob" href="http://letsgetyou.online">
+                        <img src="~/Content/Images/NR1.png">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-1 hidden-xs"></div>
+        </div>
+    </div>
+
+    <!-- UNCOMMENT THIS TO CHANGE THE SPEED OF SLIDESHOW
+    <script> $('.carousel').carousel({ interval: 5000 //changes the speed
+    }) </script>
+    -->
+
+    <script>
+
+	// <!-- JAVASCRIPT ONLY TRANSITION FOR DROPDOWN MENU -->
+
+	$('.navbar .dropdown').hover(function() {
+  $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideDown();
+  }, function() {
+  $(this).find('.dropdown-menu').first().stop(true, true).delay(0).fadeOut()
+});
+
+
+    </script>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

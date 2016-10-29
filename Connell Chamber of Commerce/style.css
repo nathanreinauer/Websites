@@ -149,8 +149,8 @@ margin:0 auto; /* center your carousel if other than 100% */
 
 .col-sm-2.leftPic{
     background: linear-gradient(
-	rgba(	238,235,211, 0.9), 
-	rgba(	238,235,211, 0.9)
+	rgba(	238,235,211, 0.6), 
+	rgba(	238,235,211, 0.6)
     ), url("images/Chamber-LEFT.jpg") no-repeat;
 	background-size: cover;
     background-clip: border-box;
@@ -158,8 +158,8 @@ margin:0 auto; /* center your carousel if other than 100% */
 
 .col-sm-2.rightPic{
     background: linear-gradient(
-	rgba(	238,235,211, 0.9), 
-	rgba(	238,235,211, 0.9)
+	rgba(	238,235,211, 0.6), 
+	rgba(	238,235,211, 0.6)
     ), url("images/Chamber-RIGHT.jpg") no-repeat;
 	background-size: cover;
     background-clip: border-box;
@@ -495,6 +495,7 @@ margin:0 auto; /* center your carousel if other than 100% */
 	font-family: 'Ewert', cursive;
 	text-decoration: none!important;
 	color: #a39493;
+	text-align: center;
 }
 
 @media only screen and (max-width: 767px){
