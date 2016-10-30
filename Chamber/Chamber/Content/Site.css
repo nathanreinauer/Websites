@@ -404,7 +404,19 @@ margin:0 auto; /* center your carousel if other than 100% */
 }
 */
 
+/* NAVBAR BANNER PICTURE*/
 
+div.banner-pic{
+    width: 100%;
+
+}
+
+div.banner-pic img{
+    width: 100%; 
+    height: 10em;
+    object-fit: cover;
+    overflow: hidden;
+}
 
 /* MAIN IMAGE LINKS */
 
