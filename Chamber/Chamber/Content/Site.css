@@ -706,7 +706,7 @@ a.darken:hover .row.bottomMid{
 
 /* PAGES */
 
-div.events-page, div.about-page {
+div.events-page, div.about-page, div.members-page {
     display: block;
     width: 100%;
     text-align: center;
@@ -747,3 +747,10 @@ div.about-chamber {
     font-size: 1.25em;
 }
 
+/* MEMBERS PAGE */
+
+.members-title {
+    font-family: courgette;
+    font-size: 1.75em;
+    margin: 25px;
+}

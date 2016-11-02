@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Chamber.Entity;
+using System.Text;
 
 namespace Chamber.Controllers
 {
@@ -25,22 +26,44 @@ namespace Chamber.Controllers
         public static List<Business> GetBusinesses()
         {
             var db = new BusinessesDbEntities();
-            var businesses = db.Businesses.ToList();
+            var businesses = db.Businesses
+                .Where(b => b.Year == 2015)
+                .OrderBy(b => b.Business1)
+                .ToList();
+
             return businesses;
         }
 
         public string MemberList()
         {
-            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            StringBuilder sb = new StringBuilder();
 
             var businesses = GetBusinesses();
 
             foreach (var business in businesses)
             {
-                sb.Append("<li>" + business.Business1 + "</li>");
+                if (HasWebsite(business))
+                {
+                    sb.Append("<li><a href='" + business.Website + "'>" + business.Business1 + "</a></li>");
+                }
+                else
+                {
+                    sb.Append("<li>" + business.Business1 + "</li>");
+                }
             }
             
             return sb.ToString();
+        }
+
+        public bool HasWebsite(Business business)
+        {
+            bool website = true;
+
+            if (business.Website == null)
+            {
+                website = false;
+            }
+            return website;
         }
     }
 }
