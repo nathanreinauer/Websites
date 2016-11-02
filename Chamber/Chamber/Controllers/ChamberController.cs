@@ -17,28 +17,41 @@ namespace Chamber.Controllers
 
         public ActionResult Members()
         {
-            string memberList = MemberList();
-            ViewBag.Message = memberList;
+            ViewBag.OddList = MemberList(true);
+            ViewBag.EvenList = MemberList(false);
 
             return View();
         }
 
-        public static List<Business> GetBusinesses()
+        public static List<Business> GetBusinesses(bool isOdd)
         {
             var db = new BusinessesDbEntities();
-            var businesses = db.Businesses
-                .Where(b => b.Year == 2015)
+            List<Business> businesses;
+
+            if(isOdd == true)
+            {
+                businesses = db.Businesses
+                .Where(b => b.Year == 2015 && b.Id % 2 != 0)
                 .OrderBy(b => b.Business1)
                 .ToList();
+            }
+            else
+            {
+                businesses = db.Businesses
+                .Where(b => b.Year == 2015 && b.Id % 2 == 0)
+                .OrderBy(b => b.Business1)
+                .ToList();
+            }
+            
 
             return businesses;
         }
 
-        public string MemberList()
+        public string MemberList(bool isOdd)
         {
             StringBuilder sb = new StringBuilder();
 
-            var businesses = GetBusinesses();
+            var businesses = GetBusinesses(isOdd);
 
             foreach (var business in businesses)
             {
