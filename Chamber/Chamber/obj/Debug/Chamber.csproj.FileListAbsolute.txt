@@ -31,3 +31,7 @@ C:\Users\Nathan\Desktop\GitHub\Websites\Chamber\Chamber\bin\System.Web.Mvc.xml
 C:\Users\Nathan\Desktop\GitHub\Websites\Chamber\Chamber\obj\Debug\Chamber.csprojResolveAssemblyReference.cache
 C:\Users\Nathan\Desktop\GitHub\Websites\Chamber\Chamber\obj\Debug\Chamber.dll
 C:\Users\Nathan\Desktop\GitHub\Websites\Chamber\Chamber\obj\Debug\Chamber.pdb
+C:\Users\Nathan\Desktop\GitHub\Websites\Chamber\Chamber\bin\EntityFramework.dll
+C:\Users\Nathan\Desktop\GitHub\Websites\Chamber\Chamber\bin\EntityFramework.SqlServer.dll
+C:\Users\Nathan\Desktop\GitHub\Websites\Chamber\Chamber\bin\EntityFramework.xml
+C:\Users\Nathan\Desktop\GitHub\Websites\Chamber\Chamber\bin\EntityFramework.SqlServer.xml
