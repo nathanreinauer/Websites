@@ -12,9 +12,19 @@
 
             <div class="members-page">
 
-                <ul>
-                    @Html.Raw(ViewBag.Message)
-                </ul>
+                <h2 class="members-title">2015 List of Chamber Members</h2>
+
+                <div class="list-section">
+
+                    <ul class="list-unstyled">
+                        @Html.Raw(ViewBag.OddList)
+                    </ul>
+
+                    <ul class="list-unstyled">
+                        @Html.Raw(ViewBag.EvenList)
+                    </ul>
+
+                </div>
 
             </div>
 
