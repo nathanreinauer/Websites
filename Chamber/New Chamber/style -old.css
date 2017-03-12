@@ -1,0 +1,688 @@
+/* GENERAL */
+
+.row{
+	background-color: #EEEBD3;/*#BFC0C0;#EFDD8D;*/
+}
+
+.navbar {
+    margin-bottom: 0;
+	border:0;
+	border-radius:0;
+}
+
+/* TOP NAVIGATION BAR */
+
+.navbar.navbar-inverse.topBar{
+	background-color: #394F49;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-header{
+	color: white;
+	font-family: 'Courgette', cursive;
+	height: 51px;
+	display: flex;
+	align-items: center;
+	font-size: 125%;
+}
+
+.nav.navbar-nav.navbar-right{
+	display: flex;
+	align-items: center;
+}
+
+#phoneNum{
+	color: white;
+	padding-top: 5px;
+	margin: 0 4px;
+	font-family: heebo;
+	font-size: 100%;
+}
+
+#emailIcon{
+	transition: all .5s ease;
+}
+
+#emailIcon:hover{
+	background-color: rgba(250,250,250,.25);
+}
+
+@media only screen and (max-width: 767px){
+	.navbar-header{
+		justify-content: center;
+	}
+	.nav.navbar-nav.navbar-right{
+		display: none;
+	}
+}
+
+/* SLIDESHOW BOX */
+
+.col-sm-6.middle{
+	height: 650px; /* was 500 */
+	padding: 0;
+	border-right: 4px solid #65743A;
+	border-left: 4px solid #65743A;
+}
+
+.slider-size {
+height: 650px; /* This is your slider height / was 500 */
+}
+.carousel {
+width:100%; 
+margin:0 auto; /* center your carousel if other than 100% */ 
+}
+
+/*
+	Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+  CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+  and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+  Inspired from:  http://codepen.io/Rowno/pen/Afykb 
+*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 767px){
+	.col-sm-6.middle, .slider-size{
+		height: 250px;
+	}
+}
+
+/* COLUMNS ON EITHER SIDE OF SLIDESHOW */
+
+.col-sm-2.leftPic, .col-sm-2.rightPic{
+	height: 650px; /* Was 500 */
+}
+
+
+.col-sm-2.leftPic{
+    background: linear-gradient(
+	rgba(	238,235,211, 0.6), 
+	rgba(	238,235,211, 0.6)
+    ), url("images/Chamber-LEFT.jpg") no-repeat;
+	background-size: cover;
+    background-clip: border-box;
+}
+
+.col-sm-2.rightPic{
+    background: linear-gradient(
+	rgba(	238,235,211, 0.6), 
+	rgba(	238,235,211, 0.6)
+    ), url("images/Chamber-RIGHT.jpg") no-repeat;
+	background-size: cover;
+    background-clip: border-box;
+}
+
+/* MAIN NAVBAR HALFWAY DOWN PAGE */
+
+.navbar.navbar-inverse.midBar{
+	background-color: #65743A;
+}
+
+.nav.navbar-nav.midNav{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	font-family: heebo;
+	font-size: 150%;
+	letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 767px){
+	.nav.navbar-nav.midNav{
+		font-size: 100%;
+		margin-left: 5px;
+	}
+	
+}
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover{
+	background: #394F49;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+}
+
+.nav>li>a.demo-3 {
+	padding: 0;
+}
+
+.nav>li.active>a.demo-4{
+	background-color: #394F49;
+	padding: 0;
+	
+}
+
+.demo-3 {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  vertical-align: top;
+  background: none;/*#1C3044;*/
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -ms-perspective: 600px;
+  perspective: 600px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
+
+ .demo-3:hover span {
+  background: #394F49;/*#314559*/;
+  -webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  -moz-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  -ms-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+}
+  .demo-3 span {
+  display: block;
+  position: relative;
+  padding: 20px 40px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+ 
+ .demo-3 span:after {
+  content: attr(data-text);
+  -webkit-font-smoothing: antialiased;
+  padding: 20px 40px;
+  color: #fff;
+  background: #394F49;/*#0e6957*/;
+  display: block;
+  position: absolute;
+ 
+  left: 0;
+  top: 0;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+  -moz-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+  -ms-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+  transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+	background: #394F49;
+}
+
+
+/* ACTIVE HOME LINK */
+
+.demo-4 {
+	color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  vertical-align: top;
+  background: #394F49;/*#1C3044;*/
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -ms-perspective: 600px;
+  perspective: 600px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
+
+ .demo-4:hover span {
+  background: #394F49;/*#314559*/;
+  -webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  -moz-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  -ms-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+  transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+}
+
+  .demo-4 span {
+  display: block;
+  position: relative;
+  padding: 20px 40px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+ 
+ .demo-4 span:after {
+  content: attr(data-text);
+  -webkit-font-smoothing: antialiased;
+  padding: 20px 38px;
+  color: #fff;
+  background: #394F49;/*#0e6957*/;
+  display: block;
+  position: absolute;
+ 
+  left: 0;
+  top: 0;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+  -moz-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+  -ms-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+  transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+}
+
+@media only screen and (max-width: 767px){
+	.demo-3 span, .demo-4 span, .demo-3 span:after, .demo-4 span:after{
+		padding: 10px 10px;
+	}
+}
+
+/* DROPDOWN MENU */
+
+.dropdown-menu{
+	background-color: #394F49;
+	width: 200px;
+	border: 2px solid #394F49;
+}
+
+.dropdown-menu li a{
+	color: white;
+	font-family: heebo;
+	font-size: 120%;
+	transition: all .3s ease-in-out;
+	padding-left: 35px;
+	letter-spacing: 0px;
+}
+
+.dropdown-menu li a:hover{
+	background-color: white;
+	color: #394F49
+}
+
+@media only screen and (max-width: 767px){
+	.dropdown-menu{
+		margin-left: -20px;
+	}
+	.col-sm-10.col-xs-12{
+		border: 0;
+	}
+}
+
+/* DROPDOWN ANIMATION CSS ONLY VERSION
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown.open .dropdown-menu {
+    max-height: 150px;
+    opacity: 1;
+}
+*/
+
+
+
+/* MAIN IMAGE LINKS */
+
+.col-sm-5.leftMid{
+	height: 296px;
+	border: 4px solid #65743A;
+	border-top: 0;
+	border-bottom: 0;
+	border-right: 2px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	background: url('images/wheat.jpg'); 
+	background-size: 125%;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	text-decoration: none!important;
+}
+
+.col-sm-5.leftMid div, a.darken{
+	text-decoration: none!important;
+}
+
+
+.welcomeH1{
+	font-family: 'Kaushan Script', cursive;
+	text-align: center;
+	padding-right: 10px;
+	margin-bottom: 20px;
+	text-decoration: none!important;
+}
+
+.welcomeP{
+	width: 75%;
+	text-align: justify;
+	text-align-last: center;
+	display: flex;
+	align-self: center;
+	margin: auto;
+	font-size: 18px;
+	color: white;
+	font-family: 'Heebo', sans-serif;
+	background-color: rgba(	57, 79, 73,.4);
+	padding: 10px;
+	border: 2px solid 0;
+	border-radius: 9px;
+}
+
+.col-sm-5.rightMid{
+	border: 2px solid #65743A;
+	border-top: 0;
+	border-bottom: 0;
+	text-decoration: none!important;
+}
+
+.row.topMid, .row.bottomMid{
+	height: 148px;
+	background-color: white;
+	border: 2px solid #65743A;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	text-decoration: none!important;
+}
+
+.row.topMid{
+	border-top: 0;
+	background: url('images/business.jpg'); 
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-decoration: none!important;
+}
+
+.row.bottomMid{
+	border-bottom: 0;
+	background: url('images/events.jpg'); 
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	text-decoration: none!important;
+}
+
+.businessH1{
+	font-family: 'Playfair Display', serif;
+	text-decoration: none!important;
+	color: #394F49;
+}
+
+.eventsH1{
+	font-family: 'Ewert', cursive;
+	text-decoration: none!important;
+	color: #a39493;
+	text-align: center;
+}
+
+@media only screen and (max-width: 767px){
+	.col-sm-5.leftMid{
+		border: 4px solid #65743A;
+		border-top: 0;
+		height: 75px;
+	}
+	.col-sm-5.rightMid{
+		height: 150px;
+	}
+	.row.topMid, .row.bottomMid{
+		height: 75px;
+	}
+	.welcomeP{
+		display: none;
+	}
+	.eventsH1, .welcomeH1, .businessH1{
+		text-align: center;
+		font-size: 200%;
+	}
+	
+}
+
+/* HOVER EFFECTS ON MIDDLE BUTTONS */
+
+a.darken .col-sm-5.leftMid,
+a.darken .row.topMid,
+a.darken .row.bottomMid {
+
+    -webkit-transition: all 0.15s ease-in-out;
+       -moz-transition: all 0.15s ease-in-out;
+        -ms-transition: all 0.15s ease-in-out;
+         -o-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out;
+
+}
+
+a.darken:hover .col-sm-5.leftMid {
+	opacity: 0.8;
+	background-size: 135%;
+}
+
+a.darken:hover .row.topMid,
+a.darken:hover .row.bottomMid{
+	opacity: 0.8;
+	background-size: 115%;
+	
+}
+
+/* BOTTOM LINKS */
+
+.col-sm-2.blue, .col-sm-2.green {
+	background-color: #65743A;
+	height: 75px;
+	color: white;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	font-family: heebo;
+	text-align: center;
+}
+
+.col-sm-2.blue a, .col-sm-2.green a, .bottomLinks a:visited, .bottomLinks a:active {
+	color: white;	
+}
+
+@media only screen and (max-width: 767px){
+	.col-sm-2.blue, .col-sm-2.green{
+		font-size: 13px;
+		height: 50px;
+	}
+}
+
+/* FOOTER */
+
+.col-sm-3.pink, .col-sm-4.purple {
+	background-color: #394F49;
+	height: 125px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	color: white;
+}
+
+@media only screen and (max-width: 767px){
+	.col-sm-3.pink{
+		height: 20px;
+	}
+	.col-sm-4.purple{
+		height: 100px;
+	}
+}
+
+.footerText{
+	font-size: 80%;
+	text-align:justify;
+	text-align-last:center;
+	/* for IE9 */
+	-ms-text-align-last:center;
+	font-family: heebo;
+}
+
+.footerText img{
+	width: 30px;
+}
+
+.footerText a:link, .footerText a:hover,
+.footerText a:visited, .footerText a:active{
+	color: white;
+}
+
+/* Bob animation on NR logo */
+@-webkit-keyframes hvr-bob {
+	0% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+	
+	50% {
+		-webkit-transform: translateY(-3px);
+		transform: translateY(-3px);
+	}
+	
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+@keyframes hvr-bob {
+	0% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+	
+	50% {
+		-webkit-transform: translateY(-3px);
+		transform: translateY(-3px);
+	}
+	
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+@-webkit-keyframes hvr-bob-float {
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+@keyframes hvr-bob-float {
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+.hvr-bob {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	width: 25px;
+	position: relative;
+	top: -4px;
+	margin-left: -2px;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+	-webkit-animation-name: hvr-bob-float, hvr-bob;
+	animation-name: hvr-bob-float, hvr-bob;
+	-webkit-animation-duration: .3s, 1.5s;
+	animation-duration: .3s, 1.5s;
+	-webkit-animation-delay: 0s, .3s;
+	animation-delay: 0s, .3s;
+	-webkit-animation-timig-function: ease-out, ease-in-out;
+	animation-timing-function: ease-out, ease-in-out;
+	-webkit-animation-iteration-count: 1, infinite;
+	animation-iteration-count: 1, infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-direction: normal, alternate;
+	animation-direction: normal, alternate;
+}
