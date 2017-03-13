@@ -1,4 +1,6 @@
 
+/* GENERAL */
+
 body, html{
 	overflow-x: hidden;
 	font-family: 'Heebo', sans-serif;
@@ -7,6 +9,10 @@ body, html{
 .container-fluid{
 	padding: 0px;
 }
+
+
+
+/* LANDING */
 
 .logo-row{
 	padding-top: 50px;
@@ -37,7 +43,7 @@ body, html{
 	justify-content: center;
 }
 
-.mission-statement h2,
+.mission-statement h1,
 .mission-statement h4{
 	margin: 0;
 	padding-left: 50px;
@@ -48,7 +54,7 @@ body, html{
 .mission-statement h4{
 }
 
-.mission-statement h2{
+.mission-statement h1{
 	padding-bottom: 15px;
 	font-family: 'Kaushan Script', cursive;
 	
@@ -88,14 +94,6 @@ body, html{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-}
-
-.left-button{
-	
-}
-
-.right-button{
-	
 }
 
 .shadow{
@@ -146,3 +144,75 @@ body, html{
 	width: 40%;
 }
 
+
+
+/* MEMBERS PORTAL */
+
+/* #header-logo{ */
+	/* background-image: url('images/header-logo.jpg'); */
+	/* background-size: contain; */
+	/* background-repeat: no-repeat; */
+	/* background-position: center; */
+	/* width: 100%; */
+	/* height: 100%; */
+/* } */
+
+/* .logo-container{ */
+	/* height: 200px; */
+	/* width: 200px; */
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* justify-content: space-around;	 */
+/* } */
+
+
+.navbar-default{
+	height: 175px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #ffffff;
+}
+
+.navbar-fixed-top{
+	border: 0;
+}
+
+.navbar-brand{
+	/* margin-top: -40px; */
+	height: 180px;
+}
+
+.navbar-brand img{
+	max-width:150px;
+}
+
+@media (min-width: 768px){
+	.navbar-nav {
+		float: left;
+		margin-top: 115px;
+	}
+}
+
+.navbar-form.navbar-right{
+	width: 200px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#phoneNum{
+	color: blue;
+	padding-top: 5px;
+	margin: 0 4px;
+	font-family: heebo;
+	font-size: 100%;
+}
+
+#emailIcon{
+	font-size: 22px;
+	transition: all .5s ease;
+}
+
+#emailIcon:hover{
+	background-color: rgba(250,250,250,.25);
+}
