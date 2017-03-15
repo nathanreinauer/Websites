@@ -146,55 +146,19 @@ body, html{
 
 
 
-/* MEMBERS center */
+/* MEMBERS CENTER */
 
-.members-center-banner{
-	height: 100px;
-	background: url('images/wheat7bw.jpg') 0 0 no-repeat fixed;
-	background-size: cover;
-	/* background-position: center center; */
-	/* background-repeat: no-repeat; */
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-}
-
-.blue-overlay{
-	background-color: #67BF60;
-    position:relative;
-    width: 104%;
-	margin-left: -15px;
-    height: 100%;
-    opacity: 0.20;
-    -moz-opacity: 20%;
-    -webkit-opacity: 20%;
-    z-index: 2;
-}
-
-.members-center-banner h1{
-	font-size: 50px;
-	letter-spacing: 3px;
-	color: #ffffff;
-}
+/* NAV BAR */
 
 .navbar-default{
 	height: 175px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: #ffffff;
-}
-
-.navbar-fixed-top{
+	background-color: #fffcf5;
 	border: 0;
-	margin-top: 50px;
 }
 
-.navbar-brand{
-	/* margin-top: -40px; */
-	height: 180px;
-}
 
 .navbar-brand img{
 	max-width:150px;
@@ -214,7 +178,7 @@ body, html{
 }
 
 #phoneNum{
-	color: #67BF60;
+	color: #5a781d;
 	padding-top: 5px;
 	margin: 0 4px;
 	font-family: heebo;
@@ -224,8 +188,42 @@ body, html{
 #emailIcon{
 	font-size: 22px;
 	transition: all .5s ease;
+	color: rgba(90,120,29,1)
 }
 
 #emailIcon:hover{
-	background-color: rgba(250,250,250,.25);
+	color: rgba(90,120,29,.25);
 }
+
+.navbar-brand{
+	height: 180px;
+}
+
+/* CONTENT */
+
+.members-center-banner{
+	height: 150px;
+	width: 100%;
+	background: url('images/wheat7bw.jpg') 0 -230px no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.members-center-banner h1{
+	font-size: 70px;
+	letter-spacing: 3px;
+	color: #ffffff;
+}
+
+.content-wrap{
+	background-color: #ffffff;
+	box-shadow: -8px 8px 4px #888888;
+}
+
+.members-body{
+	background-color: #fffcf5;	
+}
+
