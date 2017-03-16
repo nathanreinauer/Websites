@@ -144,9 +144,155 @@ body, html{
 	width: 40%;
 }
 
+.footer{
+	background-color: #50311b;
+}
 
+.footer .container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.footer .container .row{
+	display: flex;
+	justify-content: space-around;
+	margin: 15px;
+}
+
+.footer-links{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.footer-contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 1px;
+}
+
+.footer ul{
+	list-style-type:none;
+	margin-bottom: 0;
+}
+
+.footer ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+.footer ul li a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.footerText{
+	color: white;
+}
+
+.footerText{
+	font-size: 80%;
+	text-align:justify;
+	text-align-last:center;
+	/* for IE9 */
+	-ms-text-align-last:center;
+	font-family: heebo;
+}
+
+.footerText img{
+	width: 30px;
+}
+
+.footerText a:link, .footerText a:hover,
+.footerText a:visited, .footerText a:active{
+	color: white;
+}
+
+/* Bob animation on NR logo */
+@-webkit-keyframes hvr-bob {
+	0% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+	
+	50% {
+		-webkit-transform: translateY(-3px);
+		transform: translateY(-3px);
+	}
+	
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+@keyframes hvr-bob {
+	0% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+	
+	50% {
+		-webkit-transform: translateY(-3px);
+		transform: translateY(-3px);
+	}
+	
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+@-webkit-keyframes hvr-bob-float {
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+@keyframes hvr-bob-float {
+	100% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px);
+	}
+}
+
+.hvr-bob {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	width: 25px;
+	position: relative;
+	top: -4px;
+	margin-left: -2px;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+	-webkit-animation-name: hvr-bob-float, hvr-bob;
+	animation-name: hvr-bob-float, hvr-bob;
+	-webkit-animation-duration: .3s, 1.5s;
+	animation-duration: .3s, 1.5s;
+	-webkit-animation-delay: 0s, .3s;
+	animation-delay: 0s, .3s;
+	-webkit-animation-timig-function: ease-out, ease-in-out;
+	animation-timing-function: ease-out, ease-in-out;
+	-webkit-animation-iteration-count: 1, infinite;
+	animation-iteration-count: 1, infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-direction: normal, alternate;
+	animation-direction: normal, alternate;
+}
 
 /* MEMBERS CENTER */
+
+.members-body{
+	background-color: #e4d0a0;/*#fffcf5;*/	
+}
 
 /* NAV BAR */
 
@@ -155,7 +301,7 @@ body, html{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: #fffcf5;
+	background-color: #50311b;
 	border: 0;
 }
 
@@ -171,6 +317,16 @@ body, html{
 	}
 }
 
+.nav.navbar-nav li a{
+	color: white;
+	transition: all .5s ease;
+}
+
+.nav.navbar-nav li a:hover{
+	text-decoration: underline;
+	color: white;
+}
+
 .navbar-form.navbar-right{
 	width: 200px;
 	display: flex;
@@ -178,7 +334,7 @@ body, html{
 }
 
 #phoneNum{
-	color: #5a781d;
+	color: white;;
 	padding-top: 5px;
 	margin: 0 4px;
 	font-family: heebo;
@@ -188,18 +344,51 @@ body, html{
 #emailIcon{
 	font-size: 22px;
 	transition: all .5s ease;
-	color: rgba(90,120,29,1)
+	color: rgba(250,250,250,1)
 }
 
 #emailIcon:hover{
-	color: rgba(90,120,29,.25);
+	color: rgba(250,250,250,.25);
 }
 
 .navbar-brand{
 	height: 180px;
 }
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	color: #50311b;
+	background-color: white;
+}
+
 /* CONTENT */
+
+.members-center-welcome{
+	margin: 40px;
+	width: 50%;
+}
+
+.members-center-welcome h2{
+	font-family: 'Courgette', cursive;
+}
+
+.members-center-wrap{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.members-center-welcome p{
+	width: 100%;
+}
+
+.members-center-welcome-pic{
+	height: 300px;
+	width: 100%;
+	background: url('images/coffee.jpeg') center center no-repeat;
+	background-size: contain;
+	margin: 40px;
+}
 
 .members-center-banner{
 	height: 150px;
@@ -221,9 +410,24 @@ body, html{
 .content-wrap{
 	background-color: #ffffff;
 	box-shadow: -8px 8px 4px #888888;
+	margin-bottom: 40px;
 }
 
-.members-body{
-	background-color: #fffcf5;	
+.members-center-spotlight{
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+	justify-content: center;
 }
+
+.members-center-spotlight img{
+	width: 100%;
+}
+
+.spotlight-center{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+
 
